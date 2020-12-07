@@ -1,3 +1,18 @@
+GIT
+  remote: https://github.com/Shopify/liquid-c.git
+  revision: 93ba80c9606f9ddeae91807449c434aecd806c09
+  branch: master
+  specs:
+    liquid-c (4.0.0)
+      liquid (>= 3.0.0)
+
+GIT
+  remote: https://github.com/Shopify/liquid.git
+  revision: 3358a892f28845f3d154177106a8a56eb65c05ca
+  branch: master
+  specs:
+    liquid (4.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -198,7 +213,6 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    liquid (4.0.3)
     listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -257,6 +271,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 209)
   jekyll-feed (~> 0.15.1)
+  liquid!
+  liquid-c!
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
