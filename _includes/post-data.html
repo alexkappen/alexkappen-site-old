@@ -1,0 +1,17 @@
+<div class="post">
+  <div class="post-info">
+    <a class="post-info-title" href="{{ post.url }}">{{ post.title }} |</a>
+    <p class="post-info-organization">{{ post.location }}</p>
+    {% if post.date-start == post.date-end and post.date-start != false %}
+    <p class="post-info-date"><strong>[</strong>{{ post.date-start }}<strong>]</strong></p>
+    {% elsif post.date-start and post.date-end %}
+    <p class="post-info-date"><strong>[</strong>{{ post.date-start }} - {{ post.date-end }}<strong>]</strong></p>
+    {% endif %}
+    {% if post.hours %}
+    <p class="post-info-hours">Hours: {{ post.hours }}</p>
+    {% endif %}
+  </div>
+  <div class="post-excerpt">
+    {{ post.excerpt }}
+  </div>
+</div>

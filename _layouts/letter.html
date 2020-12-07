@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<hr>
+<p>{{ page.date | date_to_long_string }}</p>
+<hr>
+<p>Dear {{ page.recipient }},</p>
+<hr>
+{{ content }}
+<hr>
+<p>Sincerely,</p>
+<p>{{site.data.personal.name}}</p>
