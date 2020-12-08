@@ -2,27 +2,41 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
+title: "Alex Kappen"
+permalink: "/"
 layout: default
 ---
 
 <section id="skills">
   <div class="container">
     <h2>Skills</h2>
+    {% for post in site.categories.skills-certs %}
+    {% include post-data.html %}
+    {% endfor %}
   </div>
 </section>
 <section id="education">
   <div class="container">
     <h2>Education</h2>
+    {% for post in site.categories.education %}
+    {% include post-data.html %}
+    {% endfor %}
   </div>
 </section>
 <section id="work">
   <div class="container">
     <h2>Work Experience</h2>
+    {% for post in site.categories.work-experience %}
+    {% include post-data.html %}
+    {% endfor %}
   </div>
 </section>
 <section id="volunteer">
   <div class="container">
     <h2>Volunteer Work</h2>
+    {% for post in site.categories.vol-experience %}
+    {% include post-data.html %}
+    {% endfor %}
   </div>
 </section>
 <section id="contact">
