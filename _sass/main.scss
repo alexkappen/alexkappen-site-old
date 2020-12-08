@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Trebuchet MS', 'sans-serif'
+}
+
 section {
   width: 100%;
   padding: 2em;
@@ -16,4 +20,6 @@ section {
 @import "sections/header";
 
 @import "utils/utils";
+
+@import "sections/footer";
 

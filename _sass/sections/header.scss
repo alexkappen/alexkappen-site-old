@@ -1,7 +1,7 @@
 header {
   background-color: #f4f4f4;
   width: 100%;
-  padding: 2em;
+  padding: 4em 2em;
   text-align: center;
 }
 
@@ -15,8 +15,23 @@ h1 {
 
 ul.navigation {
   list-style-type: none;
+  margin: 0.5em 0;
 }
 
 ul.navigation li {
   display: inline-block;
+  margin: 0 0.25em;
+}
+
+ul.navigation li > a,
+ul.navigation li > a:visited {
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+ul.navigation li > a:hover,
+ul.navigation li > a:focus {
+  color: black;
+  text-decoration: underline;
 }

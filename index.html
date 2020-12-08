@@ -7,24 +7,24 @@ permalink: "/"
 layout: default
 ---
 
-<section id="skills">
-  <div class="container">
-    <h2>Skills</h2>
-    {% for post in site.categories.skills-certs %}
-    {% include post-data.html %}
-    {% endfor %}
-  </div>
-</section>
 <section id="education">
-  <div class="container">
+  <div class="grid-box">
     <h2>Education</h2>
     {% for post in site.categories.education %}
     {% include post-data.html %}
     {% endfor %}
   </div>
 </section>
+<section id="skills">
+  <div class="grid-box">
+    <h2>Skills</h2>
+    {% for post in site.categories.skills-certs %}
+    {% include post-data.html %}
+    {% endfor %}
+  </div>
+</section>
 <section id="work">
-  <div class="container">
+  <div class="grid-box">
     <h2>Work Experience</h2>
     {% for post in site.categories.work-experience %}
     {% include post-data.html %}
@@ -32,7 +32,7 @@ layout: default
   </div>
 </section>
 <section id="volunteer">
-  <div class="container">
+  <div class="grid-box">
     <h2>Volunteer Work</h2>
     {% for post in site.categories.vol-experience %}
     {% include post-data.html %}
@@ -40,7 +40,7 @@ layout: default
   </div>
 </section>
 <section id="contact">
-  <div class="container">
+  <div class="grid-box">
     <h2>Contact</h2>
   </div>
 </section>
