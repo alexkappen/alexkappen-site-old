@@ -1,0 +1,32 @@
+piano:
+  title: "Piano Instructor" 
+  date: 2017-06-01
+  location: "City of Brampton"
+  date-start: "Mar 2017"
+  date-end: "June 2017"
+  description: |
+    Taught piano basics and introductory music theory to youth (6-12 yrs)
+    Prepared 3-month curriculum for weekly introductory music theory class
+swimming:
+  - title: "Swimming Instructor" 
+    date: 2019-08-01
+    location: "City of Brampton"
+    date-start: "Jul 2019"
+    date-end: "Aug 2019"
+    description: |
+      Taught swimming and water safety to youth (ages 4-12 yrs)
+      Evaluated student’s aquatics skills, wrote report cards, consulted with parents
+  - title: "Swimming Instructor" 
+    date: 2017-10-01
+    location: "City of Brampton"
+    date-start: "Jul 2017"
+    date-end: "Oct 2017"
+    description: |
+      Taught swimming and water safety to youth (ages 4-12 yrs)
+      Evaluated student’s aquatics skills, wrote report cards, consulted with parents
+karate: 
+  title: "Karate Instructor" 
+  date: 2020-07-20
+  location: "Shiva Fighter's Karate Do"
+  date-start: "Nov 2016"
+  date-end: "Aug 2020"
