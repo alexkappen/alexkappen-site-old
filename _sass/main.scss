@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +16,16 @@ body {
 
 section {
   width: 100%;
-  padding: 2em;
+  padding: 1em;
 }
+
+
 
 @import "sections/header";
 
 @import "utils/utils";
 
 @import "sections/footer";
+
+
 

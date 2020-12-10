@@ -1,6 +1,15 @@
-.grid-box {
-  margin: 0.1em;
-  padding: 0.2em;
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  // margin: 0.1em;
+  // padding: 0.2em;
+}
+
+
+
+.grid-2-right {
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
 .container {
