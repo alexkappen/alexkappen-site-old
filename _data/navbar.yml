@@ -1,0 +1,11 @@
+# Navigation
+- name: "Skills"
+  link: "#skills"
+- name: "Education"
+  link: "#education"
+- name: "Work Experience"
+  link: "#work"
+- name: "Volunteer Experience"
+  link: "#volunteer"
+- name: "Contact"
+  link: "#contact"

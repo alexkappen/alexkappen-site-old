@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/Shopify/liquid.git
-  revision: 3358a892f28845f3d154177106a8a56eb65c05ca
+  revision: 6dec1727431421a6707d5028e3dd6a48654eb441
   branch: master
   specs:
     liquid (4.0.3)
@@ -273,7 +273,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.15.1)
   liquid!
   liquid-c!
-  minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

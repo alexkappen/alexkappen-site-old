@@ -1,12 +1,10 @@
 <header>
-  <h1>{{site.data.personal.name}}</h1>
-  <div class="container nav-bar">
-    <ul class="navigation">
-      <li><a href="#skill">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#work">Work Experience</a></li>
-      <li><a href="#volunteer">Volunteer Work</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <div class="jumbotron jumbotron-fluid text-center">
+    <h1>{{site.data.personal.name}}</h1>
+    <ul class="nav justify-content-center">
+      {% for item in site.data.navbar %}
+        <li class="nav-item"><a class="nav-link" href="{{ item.link }}"> {{ item.name }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 </header>
