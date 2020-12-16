@@ -1,3 +1,6 @@
+@import "utils/_colours";
+@import "utils/_utils";
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +12,8 @@ html {
 }
 
 body {
-  font-family: 'Trebuchet MS', 'sans-serif'
+  font-family: 'Trebuchet MS', 'sans-serif';
+  color: $textColour;
 }
 
 section {
@@ -17,9 +21,9 @@ section {
   padding: 1em;
 }
 
-@import "sections/header";
+@import "sections/_header";
 
-@import "sections/footer";
+@import "sections/_footer";
 
 
 
