@@ -53,11 +53,16 @@ layout: default
   </div>
 </section>
 <section id="work">
-  <div class="grid-box">
-    <h2>Work Experience</h2>
-    {% for post in site.categories.work-experience %}
-    {% include post-data.html %}
-    {% endfor %}
+  <h2>Work Experience</h2>
+  <div class="grid">
+  {% for entry in site.data.work %}
+  <div class="card grid-card">
+    <h4 class="title">{{ entry.title }}</h4>
+    <p class="location">{{ entry.location }}</p>
+    <p class="timeframe">{{ entry.date-start }} - {{ entry.date-end }}</p>
+    <p class="description">{{ entry.description }}</p>
+  </div>
+  {% endfor %}
   </div>
 </section>
 <section id="volunteer">
