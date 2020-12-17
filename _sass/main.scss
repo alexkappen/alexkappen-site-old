@@ -14,11 +14,23 @@ html {
 body {
   font-family: 'Trebuchet MS', 'sans-serif';
   color: $textColour;
+  background-color: $tertiary;
 }
 
 section {
   width: 100%;
-  padding: 1em;
+  padding: 0.5em;
+}
+
+a {
+  color: $textColour;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  &:hover,
+  &:focus {
+    color: $secondary;
+    text-decoration: underline;
+  }
 }
 
 @import "sections/_header";

@@ -5,18 +5,41 @@ layout: default
 ---
 
 <section id="education">
-  <div class="container">
-    <div class="row">
-      <div class="col-2 rounded-circle bg-blue">
-        <p>Image</p>
-        <h2>Education</h2>
-      </div>
-      <div class="col card">
-        <h4>{{ site.data.education.university.title }}</h4>
-        <p class="">{{ site.data.education.university.date-start }} - {{ site.data.education.university.date-end }}</p>
-        <p>{{ site.data.education.university.description }}</p>
-      </div>
+  <div class="grid-2-inline">
+    <div class="container porthole">
+      <p>Image</p>
+      <h2>Education</h2>
     </div>
+    <div class="image-card">
+      <div class="image-frame">
+        <div class="bean"></div>
+      </div>
+      <div class="details">
+        <h4 class="title">{{ site.data.education.university.title }}</h4>
+        <p class="location">{{ site.data.education.university.location }}</p>
+        <p class="timeframe">{{ site.data.education.university.date-start }} - {{ site.data.education.university.date-end }}</p>
+        <p class="description">{{ site.data.education.university.description }}</p>
+      </div>
+  </div>
+  </div>
+</section>
+<section id="test">
+  <div class="grid-2-inline">
+    <div class="container porthole">
+      <p>Image</p>
+      <h2>Education 2: Electric Boogaloo</h2>
+    </div>
+    <div class="image-card alt">
+      <div class="image-frame">
+        <div class="bean"></div>
+      </div>
+      <div class="details">
+        <h4 class="title">{{ site.data.education.university.title }}</h4>
+        <p class="location">{{ site.data.education.university.location }}</p>
+        <p class="timeframe">{{ site.data.education.university.date-start }} - {{ site.data.education.university.date-end }}</p>
+        <p class="description">{{ site.data.education.university.description }}</p>
+      </div>
+  </div>
   </div>
 </section>
 
