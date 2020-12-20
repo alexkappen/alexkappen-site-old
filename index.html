@@ -4,30 +4,20 @@ permalink: "/"
 layout: default
 ---
 
+
+<section id="skills">
+  <div class="grid-box">
+    <h2>Skills</h2>
+    {% for post in site.categories.skills-certs %}
+    {% include post-data.html %}
+    {% endfor %}
+  </div>
+</section>
 <section id="education">
   <div class="grid-2-inline">
     <div class="container porthole">
       <p>Image</p>
       <h2>Education</h2>
-    </div>
-    <div class="image-card">
-      <div class="image-frame">
-        <div class="bean"></div>
-      </div>
-      <div class="details">
-        <h4 class="title">{{ site.data.education.university.title }}</h4>
-        <p class="location">{{ site.data.education.university.location }}</p>
-        <p class="timeframe">{{ site.data.education.university.date-start }} - {{ site.data.education.university.date-end }}</p>
-        <p class="description">{{ site.data.education.university.description }}</p>
-      </div>
-  </div>
-  </div>
-</section>
-<section id="test">
-  <div class="grid-2-inline">
-    <div class="container porthole">
-      <p>Image</p>
-      <h2>Education 2: Electric Boogaloo</h2>
     </div>
     <div class="image-card alt">
       <div class="image-frame">
@@ -40,16 +30,6 @@ layout: default
         <p class="description">{{ site.data.education.university.description }}</p>
       </div>
   </div>
-  </div>
-</section>
-
-
-<section id="skills">
-  <div class="grid-box">
-    <h2>Skills</h2>
-    {% for post in site.categories.skills-certs %}
-    {% include post-data.html %}
-    {% endfor %}
   </div>
 </section>
 <section id="work">
