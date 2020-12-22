@@ -1,43 +1,4 @@
-piano:
-  title: "Piano"
-  date: 2014-08-01
-  location: "Royal Conservatory of Music (RCM)"
-  date-start: "Jul 2010"
-  date-end: "Aug 2014"
-  description: |
-    Level 10 Piano Practical exam (Technical & Studies) 
-    Level 9 Practical exam, Level 9 Music History I exam
-    Advanced & Intermediate Rudiments exams
-    Levels 4, 6, 7, 8 Practical exams
-firstaid:
-  title: "First Aid and Aquatics"
-  date: 2018-07-01
-  location: "Life Saving Society"
-  date-start: "Jun 2017"
-  date-end: "Jul 2018"
-  description: |
-    Standard First Aid & CPR/AED (Jul 2018, exp Jul 2020)
-    National Lifeguard (Jun 2018, exp Jun 2020) 
-    Life Saving, Emergency & Swim Instructors (Jun 2017, recert 2019, exp 2021)
-karate:
-  title: "Karate"
-  date: 2018-08-01
-  location: "Shiva Karate Fighters Do"
-  date-start: "Jul 2014"
-  date-end: "Aug 2018"
-  description: "Black Belt, 1st Dan, Shito Ryu style"
-videoediting:
-  title: "Video Editing"
-  date: 2020-03-01
-  location: "No location"
-  date-start: false
-  date-end: false
-  description: |
-    Fusion (with Da Vinci Resolve)
-    Colour grading
-    Simple motion graphics & text animations
-    YouTube video creation
-coding:
+- coding:
   title: "Coding"
   date: 2020-07-01
   location: "No location"
@@ -51,3 +12,42 @@ coding:
     Google AppsScript
     Java
     SVG animation with JavaScript
+- videoediting:
+  title: "Video Editing"
+  date: 2020-03-01
+  location: "No location"
+  date-start: false
+  date-end: false
+  description: |
+    Fusion (with Da Vinci Resolve)
+    Colour grading
+    Simple motion graphics & text animations
+    YouTube video creation
+- piano:
+  title: "Piano"
+  date: 2014-08-01
+  location: "Royal Conservatory of Music (RCM)"
+  date-start: "Jul 2010"
+  date-end: "Aug 2014"
+  description: |
+    Level 10 Piano Practical exam (Technical & Studies) 
+    Level 9 Practical exam, Level 9 Music History I exam
+    Advanced & Intermediate Rudiments exams
+    Levels 4, 6, 7, 8 Practical exams
+- firstaid:
+  title: "First Aid and Aquatics"
+  date: 2018-07-01
+  location: "Life Saving Society"
+  date-start: "Jun 2017"
+  date-end: "Jul 2018"
+  description: |
+    Standard First Aid & CPR/AED (Jul 2018, exp Jul 2020)
+    National Lifeguard (Jun 2018, exp Jun 2020) 
+    Life Saving, Emergency & Swim Instructors (Jun 2017, recert 2019, exp 2021)
+- karate:
+  title: "Karate"
+  date: 2018-08-01
+  location: "Shiva Karate Fighters Do"
+  date-start: "Jul 2014"
+  date-end: "Aug 2018"
+  description: "Black Belt, 1st Dan, Shito Ryu style"

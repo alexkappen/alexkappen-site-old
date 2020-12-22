@@ -1,4 +1,4 @@
-hospital:
+- hospital:
   title: "Hospital Volunteer" 
   date: 2020-03-14
   location: "Hamilton Health Sciences"
@@ -8,7 +8,7 @@ hospital:
   description: |
     Volunteered at stroke rehabilitation ward, assisted Physio and Occupational Therapists with patient recovery and well-being
     Assisted in-patients on wheelchairs to get to their therapy appointments on time
-aquatics:
+- aquatics:
   title: "Aquatics Volunteer" 
   date: 2016-09-01
   location: "City of Brampton"
@@ -16,7 +16,7 @@ aquatics:
   date-start: "Jan 2016"
   date-end: "Sep 2016"
   description: "Assisted aquatics instructors with youth swimming lessons at Century Gardens Recreation Center Brampton"
-karate:
+- karate:
   title: "Karate Assistant Instructor" 
   date: 2016-11-01
   location: "Shiva Fighter's Karate Do"
@@ -26,7 +26,7 @@ karate:
   description: |
     Assisted in teaching karate to younger students 
     Volunteered at local dojo tournaments and Karate Ontario tournaments
-summercamp:
+- summercamp:
   title: "Summer Camp Volunteer" 
   date: 2016-09-01
   location: "City of Brampton"
@@ -36,22 +36,23 @@ summercamp:
   description: |
     Volunteered at arts summer camp program for youth (ages 5-12)
     Conducted drawing sessions and piano lessons
-homelessshelter:
-  - title: "Homeless Shelter Volunteer"
-    date: 2017-03-01
-    location: "ReGeneration Homeless Shelter Brampton"
-    hours: "10+"
-    date-start: "Mar 2017"
-    date-end: "Mar 2017"
-    description: "Assisted staff at the homeless shelter in organizing and packaging toiletries and clothing for homeless in the local community"
-  - title: "Homeless Shelter Volunteer"
-    date: 2018-05-01
-    location: "ReGeneration Homeless Shelter Brampton"
-    hours: "10+"
-    date-start: "May 2018"
-    date-end: "May 2018"
-    description: "Prepared meals for homeless and those suffering from mental illness, as part of a school retreat"
-highschool:
+- homelessshelter:
+  title: "Homeless Shelter Volunteer"
+  date: 2017-03-01
+  location: "ReGeneration Homeless Shelter Brampton"
+  hours: "10+"
+  date-start: "Mar 2017"
+  date-end: "Mar 2017"
+  description: "Assisted staff at the homeless shelter in organizing and packaging toiletries and clothing for homeless in the local community"
+- homelessshelter:
+  title: "Homeless Shelter Volunteer"
+  date: 2018-05-01
+  location: "ReGeneration Homeless Shelter Brampton"
+  hours: "10+"
+  date-start: "May 2018"
+  date-end: "May 2018"
+  description: "Prepared meals for homeless and those suffering from mental illness, as part of a school retreat"
+- highschool:
   title: "High School Leadership Programs" 
   date: 2018-05-01
   location: "Cardinal Ambrozic C.S.S"

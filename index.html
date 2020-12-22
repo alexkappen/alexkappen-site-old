@@ -6,11 +6,9 @@ layout: default
 
 
 <section id="skills">
-  <div class="grid-box">
-    <h2>Skills</h2>
-    {% for post in site.categories.skills-certs %}
-    {% include post-data.html %}
-    {% endfor %}
+  <h2>Skills</h2>
+  <div class="coding">
+    <canvas id="coding-showcase" width="200" height="200"></canvas>
   </div>
 </section>
 <section id="education">
@@ -46,10 +44,22 @@ layout: default
   </div>
 </section>
 <section id="volunteer">
-  <div class="grid-box">
-    <h2>Volunteer Work</h2>
-    {% for post in site.categories.vol-experience %}
-    {% include post-data.html %}
+  <h2>Volunteer Work</h2>
+  <div class="grid">
+    {% for entry in site.data.volunteer %}
+    <div class="square-card flip-card ">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="{{ entry.img }}">
+          <h4 class="title">{{ entry.title }}</h4>
+          <p class="location">{{ entry.location }}</p>
+          <p class="timeframe">{{ entry.date-start }} - {{ entry.date-end }}</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="description">{{ entry.description }}</p>
+        </div>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>
