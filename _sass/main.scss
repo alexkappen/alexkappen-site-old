@@ -57,6 +57,13 @@ button {
   }
 }
 
+div.noscript {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: yellow;
+}
+
 @import "sections/_header";
 
 @import "sections/_canvas";
