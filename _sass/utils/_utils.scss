@@ -85,8 +85,8 @@
     .image-frame {
       background-color: $quaternary;
     }
-    .bean {
-      transform: scale(1.4) rotate(20deg) translate(30px, 10px);
+    .education {
+      transform: scale(1.4) rotate(20deg) translate(30px, -10px);
       // transform: rotate(-20deg) scale(1.2);
     }
     .details .description::before {
@@ -131,7 +131,7 @@
   }
 }
 
-.bean {
+.education {
   position: absolute; // Allows for transforms
   top: 0;
   left:-100%;
@@ -141,7 +141,7 @@
   min-height: 100%;
   min-width: auto;
   // Image
-  background-image: url('/assets/img/beans.png');
+  background-image: url('/assets/img/undraw_science_fqhl.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
