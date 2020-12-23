@@ -16,6 +16,7 @@ h1 {
   margin: 0.5em auto;
 }
 
+#svg-drawing,
 #bean {
   width: 100%;
   height: auto;
@@ -36,8 +37,8 @@ ul.navigation {
   color: #ffffff;
   background-color: $secondary;
   border-radius: 5px;
+  text-decoration: none;
   &:hover {
-    text-decoration: none;
     color: #ffffff;
     background-color: $quaternary;
     padding: 1em 1em;

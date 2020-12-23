@@ -7,14 +7,36 @@ layout: default
 
 <section id="skills">
   <h2>Skills</h2>
-  <div class="coding">
-    <canvas id="coding-showcase" width="200" height="200"></canvas>
+  <div id="skills-showcase">
+    <canvas width="200" height="200"></canvas>
+    <div id="skills-details" class="hor-grid">
+      {% for entry in site.data.skills %}
+      <div class="card transparent-card">
+        <h4 class="title">{{ entry.title }}</h4>
+        <!-- <p class="location">{{ entry.location }}</p>
+        <p class="timeframe">{{ entry.date-start }} - {{ entry.date-end }}</p> -->
+        {% for d in entry.description %}
+          <p class="description">{{ d.detail }}</p>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="coding-examples grid">
+    <div class="transparent-card">
+      <h3>JavaScript Coding Examples</h2>
+      <button id="reveal-canvas">Example 1</button>
+      <button id="reveal-svg-draw">Example 2</button>
+    </div>
+    <div class="svg-draw">
+      {% include bean.html %}
+    </div>
   </div>
 </section>
+
 <section id="education">
   <div class="grid-2-inline">
     <div class="container porthole">
-      <p>Image</p>
       <h2>Education</h2>
     </div>
     <div class="image-card alt">
@@ -30,6 +52,7 @@ layout: default
   </div>
   </div>
 </section>
+
 <section id="work">
   <h2>Work Experience</h2>
   <div class="grid">
@@ -43,6 +66,7 @@ layout: default
   {% endfor %}
   </div>
 </section>
+
 <section id="volunteer">
   <h2>Volunteer Work</h2>
   <div class="grid">
@@ -56,15 +80,25 @@ layout: default
           <p class="timeframe">{{ entry.date-start }} - {{ entry.date-end }}</p>
         </div>
         <div class="flip-card-back">
-          <p class="description">{{ entry.description }}</p>
+          <ul>
+            {% for d in entry.description %}
+            <li class="description">{{ d.detail }}</li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
 </section>
+
 <section id="contact">
   <div class="grid-box">
-    <h2>Contact</h2>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>alexkappen@gmail.com</p>
+      <a href="https://github.com/alexkappn" target="_blank">GitHub</a>
+      <a href="https://github.com/imakappa" target="_blank">GitHub (Hobby Account)</a>
+    </div>
   </div>
 </section>

@@ -1,3 +1,8 @@
+.hide {
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+
 .container {
   margin: auto;
   display: flex;
@@ -8,14 +13,19 @@
 }
 
 .porthole {
+  color: #ffffff;
   width: 10em;
   height: 10em;
   border-radius: 50%;
   background-color: $secondary;
   transition: 0.3s;
+  h2 {
+    margin: auto;
+  }
   &:hover {
     background-color: $quaternary;
     border-radius: 0;
+    padding-bottom: 1em;
   }
 }
 
@@ -25,6 +35,17 @@
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
+  height: 100%;
+}
+
+.hor-grid {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(6, 1fr));
+  // grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
 }
 
 .grid-2-inline {
@@ -181,4 +202,12 @@
     opacity: 0;
     margin-top: 0.7em;
   }
+}
+
+.transparent-card {
+  height: auto;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid $tertiary;
+  padding: 0.25em;
 }

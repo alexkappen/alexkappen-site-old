@@ -1,0 +1,19 @@
+section#skills {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#skills-showcase {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+}
+
+canvas {
+  // border: 1px solid black;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  z-index: -1;
+}

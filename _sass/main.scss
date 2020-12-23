@@ -9,12 +9,14 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 body {
   font-family: 'Trebuchet MS', 'sans-serif';
   color: $textColour;
   background-color: $tertiary;
+  margin: 0;
 }
 
 section {
@@ -23,22 +25,43 @@ section {
 }
 
 h2 {
-  margin: auto;
+  margin: 0.25em auto;
   text-align: center;
 }
 
 a {
-  color: $textColour;
-  text-decoration: none;
+  color: $secondary;
+  // text-decoration: none;
   transition-duration: 0.3s;
   &:hover,
   &:focus {
     color: $secondary;
-    text-decoration: underline;
+    text-decoration: none;
+  }
+}
+
+button {
+  font-family: 'Trebuchet MS', 'sans-serif';
+  margin: 0.2em;
+  padding: 10px 18px;
+  color: white;
+  background-color: $secondary;
+  border: none;
+  transition: 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  &:hover {
+    background-color: $quaternary;
+    color: $textColour;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 }
 
 @import "sections/_header";
+
+@import "sections/_canvas";
+
+@import "sections/_coding-ex";
 
 @import "sections/_squareCard";
 

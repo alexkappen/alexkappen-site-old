@@ -1,37 +1,31 @@
-const bean = document.querySelectorAll("#bean path");
+const svgDrawing = document.querySelectorAll("#svg-drawing path");
 
-const beanBtn = document.querySelector('#reveal-svg-draw').addEventListener('click', () => {
-  beanFiller.restart();
-  beanFiller.pause();
-  beanDraw.play();
-});
-
-for (let i = 0; i < bean.length; i++) {
+for (let i = 0; i < svgDrawing.length; i++) {
   // console.log(`Letter ${i} is ${bean[i].getTotalLength()}`);
-  bean[i].style.strokeDasharray = bean[i].getTotalLength();
+  svgDrawing[i].style.strokeDasharray = svgDrawing[i].getTotalLength();
   // bean[i].style.fill = "transparent";
-  bean[i].setAttribute("stroke", bean[i].getAttribute("fill"));
+  svgDrawing[i].setAttribute("stroke", svgDrawing[i].getAttribute("fill"));
   // bean[i].setAttribute("stroke-width", thiccInput.value);
 }
 
-var beanDraw = anime({
-  targets: bean,
+var draw = anime({
+  targets: svgDrawing,
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutQuad',
   duration: 3000,
   direction: 'linear',
-  autoplay: false,
+  autoplay: true,
   loop: false,
   complete: () => {
     console.log("Draw lines complete");
-    beanFiller.play();
+    filler.play();
   }
 });
 
-var beanFiller = anime({
-  targets: bean,
+var filler = anime({
+  targets: svgDrawing,
   fill: ["rgba(0,0,0,0)", function(el, i) {
-    return bean[i].getAttribute("fill");
+    return svgDrawing[i].getAttribute("fill");
   }],
   easing: "easeInSine",
   delay: 500,

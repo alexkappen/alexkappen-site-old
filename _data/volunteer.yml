@@ -5,9 +5,9 @@
   hours: "50+"
   date-start: "Oct 2019"
   date-end: "Mar 2020"
-  description: |
-    Volunteered at stroke rehabilitation ward, assisted Physio and Occupational Therapists with patient recovery and well-being
-    Assisted in-patients on wheelchairs to get to their therapy appointments on time
+  description:
+    - detail: Volunteered in Stroke Rehabilitation ward, assisted Physio- & Occupational Therapists with patient recovery and well-being
+    - detail: Assisted in-patients on wheelchairs get to their therapy appointments on time
 - aquatics:
   title: "Aquatics Volunteer" 
   date: 2016-09-01
@@ -15,7 +15,8 @@
   hours: "100+"
   date-start: "Jan 2016"
   date-end: "Sep 2016"
-  description: "Assisted aquatics instructors with youth swimming lessons at Century Gardens Recreation Center Brampton"
+  description: 
+    - detail: "Assisted aquatics instructors with youth swimming lessons at Century Gardens Recreation Center Brampton"
 - karate:
   title: "Karate Assistant Instructor" 
   date: 2016-11-01
@@ -23,9 +24,9 @@
   hours: "50+"
   date-start: "Jun 2014"
   date-end: "Nov 2016"
-  description: |
-    Assisted in teaching karate to younger students 
-    Volunteered at local dojo tournaments and Karate Ontario tournaments
+  description: 
+    - detail: Assisted in teaching karate to younger students 
+    - detail: Volunteered at local dojo tournaments and Karate Ontario tournaments
 - summercamp:
   title: "Summer Camp Volunteer" 
   date: 2016-09-01
@@ -33,9 +34,9 @@
   hours: "110+"
   date-start: "Jul 2015"
   date-end: "Sep 2015"
-  description: |
-    Volunteered at arts summer camp program for youth (ages 5-12)
-    Conducted drawing sessions and piano lessons
+  description: 
+    - detail: Volunteered at arts summer camp program for youth (ages 5-12)
+    - detail: Conducted drawing sessions and piano lessons
 - homelessshelter:
   title: "Homeless Shelter Volunteer"
   date: 2017-03-01
@@ -43,7 +44,8 @@
   hours: "10+"
   date-start: "Mar 2017"
   date-end: "Mar 2017"
-  description: "Assisted staff at the homeless shelter in organizing and packaging toiletries and clothing for homeless in the local community"
+  description: 
+    - detail: "Assisted staff at the homeless shelter in organizing and packaging toiletries and clothing for homeless in the local community"
 - homelessshelter:
   title: "Homeless Shelter Volunteer"
   date: 2018-05-01
@@ -51,7 +53,8 @@
   hours: "10+"
   date-start: "May 2018"
   date-end: "May 2018"
-  description: "Prepared meals for homeless and those suffering from mental illness, as part of a school retreat"
+  description: 
+    - detail: "Prepared meals for homeless and those suffering from mental illness, as part of a school retreat"
 - highschool:
   title: "High School Leadership Programs" 
   date: 2018-05-01
@@ -59,6 +62,6 @@
   hours: "50+"
   date-start: "Sep 2016"
   date-end: "May 2018"
-  description: |
-    Helped to organize a charity event at school called Fast & Servious, where students walk around in the city of Toronto giving out food and toiletries to homeless people and shelters (Jan 2018 - Mar 2018)
-    Helped to organize events for Grade 9 students to assist with their transition to high school through social events. Helped to organize art-centered events for kids with disabilities (Sept 2016 - Jun 2017)
+  description:
+    - detail: Fast & Servious Charity Event (Jan 2018 - Mar 2018)
+    - detail: Highschool Leadership Program to oversee Grade 9 students (Sept 2016 - Jun 2017)
