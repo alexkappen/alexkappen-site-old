@@ -1,11 +1,8 @@
 - coding:
   title: "Coding"
   date: 2020-07-01
-  location: "No location"
-  date-start: false
-  date-end: false
   description: 
-    - detail: (Web Frontend) Self-taught HTML, CSS, JavaScript skills. Developed this site, and <a href="https://imakappa.github.io/" target="_blank">blog site</a>
+    - detail: (Web Frontend) Self-taught HTML, CSS, JavaScript skills. Developed <a href="https://alexkappen.github.io/" target="_blank">resume website</a>, and <a href="https://imakappa.github.io/" target="_blank">blog site</a>
     - detail: (Ruby/Ruby on Rails) Mock social media platform, this website, static blog site
     - detail: (Python) Web scraping, OOP, 
     - detail: (Version Control) Git and GitHub
@@ -13,9 +10,6 @@
 - videoediting:
   title: "Video Editing"
   date: 2020-03-01
-  location: "No location"
-  date-start: false
-  date-end: false
   description: 
     - detail: Fusion (with Da Vinci Resolve)
     - detail: Colour grading
@@ -25,8 +19,7 @@
   title: "First Aid and Aquatics"
   date: 2018-07-01
   location: "Life Saving Society"
-  date-start: "Jun 2017"
-  date-end: "Jul 2018"
+  timeframe: "Jun 2017 - Jul 2018"
   description: 
     - detail: Standard First Aid & CPR/AED (Jul 2018, exp Jul 2020)
     - detail: National Lifeguard (Jun 2018, exp Jun 2020) 
@@ -35,16 +28,14 @@
   title: "Karate"
   date: 2018-08-01
   location: "Shiva Karate Fighters Do"
-  date-start: "Jul 2014"
-  date-end: "Aug 2018"
+  timeframe: "Jul 2014 - Aug 2018"
   description: 
     - detail: "Black Belt, 1st Dan, Shito Ryu style"
 - piano:
   title: "Piano"
   date: 2014-08-01
   location: "Royal Conservatory of Music (RCM)"
-  date-start: "Jul 2010"
-  date-end: "Aug 2014"
+  timeframe: "Jul 2010 - Aug 2014"
   description:
     - detail: Level 10 Piano Practical exam (Technical & Studies) 
     - detail: Level 9 Practical exam, Level 9 Music History I exam

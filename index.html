@@ -14,7 +14,7 @@ layout: default
       <div class="card transparent-card">
         <h4 class="title">{{ entry.title }}</h4>
         <!-- <p class="location">{{ entry.location }}</p>
-        <p class="timeframe">{{ entry.date-start }} - {{ entry.date-end }}</p> -->
+        <p class="timeframe">{{ entry.timeframe }}</p> -->
         {% for d in entry.description %}
           <p class="description">{{ d.detail }}</p>
         {% endfor %}
@@ -43,11 +43,17 @@ layout: default
       <div class="image-frame">
         <div class="education"></div>
       </div>
-      <div class="details">
-        <h4 class="title">{{ site.data.education.university.title }}</h4>
-        <p class="location">{{ site.data.education.university.location }}</p>
-        <p class="timeframe">{{ site.data.education.university.date-start }} - {{ site.data.education.university.date-end }}</p>
-        <p class="description">{{ site.data.education.university.description }}</p>
+      <div class="info">
+        {% for entry in site.data.education %}
+          <h4 class="title">{{ entry.title }}</h4>
+          <p class="location">{{ entry.location }}</p>
+          <p class="timeframe">{{ entry.timeframe }}</p>
+          <ul class="details">
+          {% for d in entry.description %}
+            <li class="description">{{ d.detail }}</li>
+          {% endfor %}
+          </ul>
+        {% endfor %}
       </div>
   </div>
   </div>
@@ -60,9 +66,13 @@ layout: default
   <div class="card grid-card">
     <h4 class="title">{{ entry.title }}</h4>
     <p class="location">{{ entry.location }}</p>
-    <p class="timeframe">{{ entry.date-start }} - {{ entry.date-end }}</p>
-    <p class="description">{{ entry.description }}</p>
-  </div>
+    <p class="timeframe">{{ entry.timeframe }}</p>
+    <ul class="details">
+    {% for d in entry.description %}
+      <li class="description">{{ d.detail }}</li>
+    {% endfor %}
+    </ul>
+    </div>
   {% endfor %}
   </div>
 </section>
@@ -77,10 +87,10 @@ layout: default
           <img src="{{ entry.img }}">
           <h4 class="title">{{ entry.title }}</h4>
           <p class="location">{{ entry.location }}</p>
-          <p class="timeframe">{{ entry.date-start }} - {{ entry.date-end }}</p>
+          <p class="timeframe">{{ entry.timeframe }}</p>
         </div>
         <div class="flip-card-back">
-          <ul>
+          <ul class="details">
             {% for d in entry.description %}
             <li class="description">{{ d.detail }}</li>
             {% endfor %}

@@ -1,18 +1,15 @@
-concert:
-  - title: "BCMCS Concert Performance"
-    details:
-      date: 2018-07-20
-      location: "Trinity St Paul's United Church"
-      date-start: "Jun 2015"
-      date-end: "Jun 2015"
-      description: | 
-        "Featured young artist, by audition, in BCMCS classical concert. 
-        Article mention in local newspaper.
-        https://www.bramptonguardian.com/whatson-story/8733688-brampton-chamber-music-presents-classical-piano-concert/"
-  - title: "Concert Performance"
-    details:
-      date: 2018-07-20
-      location: "Trinity St Paul's United Church"
-      date-start: "Jun 2015"
-      date-end: "Jun 2015"
-      description: "Performed classical piano pieces at the church prepared from RCM curriculum"
+- concert:
+  title: "BCMCS Concert Performance"
+  date: 2018-07-20
+  location: "Trinity St Paul's United Church"
+  timeframe: "Jun 2018"
+  description:
+  - detail: Featured young artist, by audition, in BCMCS classical concert.
+  - detail: <a href="https://www.bramptonguardian.com/whatson-story/8733688-brampton-chamber-music-presents-classical-piano-concert/" target="_blank">Article mention in local newspaper.</a>
+- concert: 
+  title: "Concert Performance"
+  date: 2015-07-20
+  location: "Trinity St Paul's United Church"
+  timeframe: "Jun 2015"
+  description: 
+  - detail: "Performed classical piano pieces at the church prepared from RCM curriculum"

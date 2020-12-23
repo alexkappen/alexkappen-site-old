@@ -3,8 +3,7 @@
   date: 2020-03-14
   location: "Hamilton Health Sciences"
   hours: "50+"
-  date-start: "Oct 2019"
-  date-end: "Mar 2020"
+  timeframe: "Oct 2019 - Mar 2020"
   description:
     - detail: Volunteered in Stroke Rehabilitation ward, assisted Physio- & Occupational Therapists with patient recovery and well-being
     - detail: Assisted in-patients on wheelchairs get to their therapy appointments on time
@@ -13,8 +12,7 @@
   date: 2016-09-01
   location: "City of Brampton"
   hours: "100+"
-  date-start: "Jan 2016"
-  date-end: "Sep 2016"
+  timeframe: "Jan 2016 - Sep 2016"
   description: 
     - detail: "Assisted aquatics instructors with youth swimming lessons at Century Gardens Recreation Center Brampton"
 - karate:
@@ -22,8 +20,7 @@
   date: 2016-11-01
   location: "Shiva Fighter's Karate Do"
   hours: "50+"
-  date-start: "Jun 2014"
-  date-end: "Nov 2016"
+  timeframe: "Jun 2014 - Nov 2016"
   description: 
     - detail: Assisted in teaching karate to younger students 
     - detail: Volunteered at local dojo tournaments and Karate Ontario tournaments
@@ -32,8 +29,7 @@
   date: 2016-09-01
   location: "City of Brampton"
   hours: "110+"
-  date-start: "Jul 2015"
-  date-end: "Sep 2015"
+  timeframe: "Jul 2015 - Sep 2015"
   description: 
     - detail: Volunteered at arts summer camp program for youth (ages 5-12)
     - detail: Conducted drawing sessions and piano lessons
@@ -42,8 +38,7 @@
   date: 2017-03-01
   location: "ReGeneration Homeless Shelter Brampton"
   hours: "10+"
-  date-start: "Mar 2017"
-  date-end: "Mar 2017"
+  timeframe: "Mar 2017 - Mar 2017"
   description: 
     - detail: "Assisted staff at the homeless shelter in organizing and packaging toiletries and clothing for homeless in the local community"
 - homelessshelter:
@@ -51,8 +46,7 @@
   date: 2018-05-01
   location: "ReGeneration Homeless Shelter Brampton"
   hours: "10+"
-  date-start: "May 2018"
-  date-end: "May 2018"
+  timeframe: "May 2018 - May 2018"
   description: 
     - detail: "Prepared meals for homeless and those suffering from mental illness, as part of a school retreat"
 - highschool:
@@ -60,8 +54,7 @@
   date: 2018-05-01
   location: "Cardinal Ambrozic C.S.S"
   hours: "50+"
-  date-start: "Sep 2016"
-  date-end: "May 2018"
+  timeframe: "Sep 2016 - May 2018"
   description:
     - detail: Fast & Servious Charity Event (Jan 2018 - Mar 2018)
     - detail: Highschool Leadership Program to oversee Grade 9 students (Sept 2016 - Jun 2017)

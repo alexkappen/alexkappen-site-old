@@ -1,0 +1,69 @@
+---
+title: "Print"
+permalink: "/print"
+layout: print
+---
+
+<section>
+  <h2>Education</h2>
+  {% for entry in site.data.education %}
+    <h4 class="title">{{ entry.title }}</h4>
+    <p class="location">{{ entry.location }}</p>
+    <p class="timeframe">{{ entry.timeframe }}</p>
+    <ul class="details">
+      {% for d in entry.description %}
+        <li class="description">{{ d.detail }}</li>
+      {% endfor %}
+      </ul>
+  {% endfor %}
+</section>
+<section>
+  <h2>Work Experience</h2>
+  {% for entry in site.data.work %}
+    <h4 class="title">{{ entry.title }}</h4>
+    <p class="location">{{ entry.location }}</p>
+    <p class="timeframe">{{ entry.timeframe }}</p>
+    <ul class="details">
+      {% for d in entry.description %}
+        <li class="description">{{ d.detail }}</li>
+      {% endfor %}
+      </ul>
+  {% endfor %}
+</section>
+<section>
+  <h2>Volunteer Experience</h2>
+  {% for entry in site.data.volunteer %}
+    <h4 class="title">{{ entry.title }}</h4>
+    <p class="location">{{ entry.location }}</p>
+    <p class="timeframe">{{ entry.timeframe }}</p>
+    <ul class="details">
+      {% for d in entry.description %}
+        <li class="description">{{ d.detail }}</li>
+      {% endfor %}
+      </ul>
+  {% endfor %}
+</section>
+<section>
+  <h2>Skills & Certifications</h2>
+  {% for entry in site.data.skills %}
+    <h4 class="title">{{ entry.title }}</h4>
+    <ul class="details">
+    {% for d in entry.description %}
+      <li class="description">{{ d.detail }}</li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+</section>
+<section>
+  <h2>Awards & Recognition</h2>
+  {% for entry in site.data.awards-recog %}
+    <h4 class="title">{{ entry.title }}</h4>
+    <p class="location">{{ entry.location }}</p>
+    <p class="timeframe">{{ entry.timeframe }}</p>
+    <ul class="details">
+      {% for d in entry.description %}
+        <li class="description">{{ d.detail }}</li>
+      {% endfor %}
+      </ul>
+  {% endfor %}
+</section>

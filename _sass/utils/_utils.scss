@@ -89,7 +89,7 @@
       transform: scale(1.4) rotate(20deg) translate(30px, -10px);
       // transform: rotate(-20deg) scale(1.2);
     }
-    .details .description::before {
+    .info .timeframe:after {
       background-color: $quaternary;
       width: 120px;
     }
@@ -102,7 +102,7 @@
     transition: 0.3s;
     overflow: hidden;
   }
-  .details {
+  .info {
     position: relative;
     text-align: left;
     margin: auto;
@@ -113,20 +113,24 @@
     }
     .timeframe {
       color: grey;
-    }
-    .description {
-      position: relative;
-      margin-top: 1.25rem;
-      &:before {
+      &:after {
         content: "";
         position: absolute;
         height: 5px;
         background-color: $secondary;
         width: 35px;
-        top: -0.75rem;
+        top: 5em;
+        left: 1em;
         border-radius: 3px;
         transition: 0.3s ease-out;
       }
+    }
+    .details {
+      margin-top: 1rem;
+    }
+    .description {
+      position: relative;
+      margin-top: 0.2rem;
     }
   }
 }
