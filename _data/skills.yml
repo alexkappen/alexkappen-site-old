@@ -2,18 +2,17 @@
   title: "Coding"
   date: 2020-07-01
   description: 
-    - detail: (Web Frontend) Self-taught HTML, CSS, JavaScript skills. Developed <a href="https://alexkappen.github.io/" target="_blank">resume website</a>, and <a href="https://imakappa.github.io/" target="_blank">blog site</a>
-    - detail: (Ruby/Ruby on Rails) Mock social media platform, this website, static blog site
-    - detail: (Python) Web scraping, OOP, 
-    - detail: (Version Control) Git and GitHub
-    - detail: (Java) Data structures and algorithms
+    - detail: '<strong>Web Front-end:</strong> Self-taught HTML, CSS, JavaScript skills. Developed <a href="https://alexkappen.github.io/" target="_blank">resume website</a>, and <a href="https://imakappa.github.io/" target="_blank">blog site</a>'
+    - detail: "<strong>Ruby/Ruby on Rails:</strong> Developed mock social media platform, Jekyll static site development"
+    - detail: "<strong>Python:</strong> Web scraping, file manipulation (Excel, JSON, XML, etc)"
+    - detail: "<strong>Java:</strong> Data structures and algorithms"
+    - detail: "<strong>Version Control:</strong> Git and GitHub"
 - videoediting:
   title: "Video Editing"
   date: 2020-03-01
   description: 
-    - detail: Fusion (with Da Vinci Resolve)
-    - detail: Colour grading
-    - detail: Simple motion graphics & text animations
+    - detail: Fusion (in Da Vinci Resolve)
+    - detail: Colour grading, Motion graphics & text animations
     - detail: YouTube video creation
 - firstaid:
   title: "First Aid and Aquatics"
