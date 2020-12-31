@@ -213,5 +213,7 @@
   text-align: center;
   border-radius: 12px;
   border: 1px solid $tertiary;
-  padding: 0.25em;
+  border-left: 3px solid $secondary;
+  border-right: 3px solid $quaternary;
+  padding: 0.4em;
 }
