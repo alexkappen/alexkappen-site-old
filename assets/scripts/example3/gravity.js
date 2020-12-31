@@ -93,8 +93,17 @@ function ballAnimate() {
   });
 }
 
+skillDetails.addEventListener('click', () => {
+  // flyball();
+  spread = 60;
+  pointRise(spread);
+  // serpent();
+});
+
 // Controls
 const gravityCanvas = document.querySelector('#gravity').addEventListener('click', () => {
   stop(globalID);
   start(ballInit, ballAnimate);
+  currentInit = ballInit;
+  currentAnim = ballAnimate;
 });

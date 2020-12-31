@@ -80,6 +80,8 @@ function bubbleAnimate() {
 const bubbleCanvas = document.querySelector('#bubbles').addEventListener('click', () => {
   stop(globalID);
   start(bubbleInit, bubbleAnimate);
+  currentInit = bubbleInit;
+  currentAnim = bubbleAnimate;
 });
 
 

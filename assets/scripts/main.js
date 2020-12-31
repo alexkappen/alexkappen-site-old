@@ -20,21 +20,16 @@ addEventListener('mousemove', (event) => {
 });
 
 addEventListener('resize', () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = canvas.parentElement.clientWidth;
+  canvas.height = canvas.parentElement.clientHeight;
 
-  init()
-});
-
-addEventListener('click', () => {
-  // flyball();
-  spread = 60;
-  pointRise(spread);
-  // serpent();
+  currentInit();
 });
 
 // Animation Controls
 let globalID;
+let currentInit;
+let currentAnim;
 
 function start(initialize, animation) {
   canvasRevealBtn();
