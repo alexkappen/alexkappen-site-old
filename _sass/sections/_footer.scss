@@ -1,13 +1,13 @@
 footer {
-  background-color: $secondary;
-  color: #ffffff;
+  background-color: $primaryBlue;
+  color: $textWhite;
   width: 100%;
   padding: 4em 2em;
   text-align: center;
   a {
-    color: #ffffff;
+    color: $textWhite;
     &:hover {
-      color: #ffffff;
+      color: $textWhite;
     }
   }
 }

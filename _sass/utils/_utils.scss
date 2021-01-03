@@ -17,16 +17,50 @@
   width: 10em;
   height: 10em;
   border-radius: 50%;
-  background-color: $secondary;
+  background-color: $primaryBlue;
   transition: 0.3s;
   h2 {
     margin: auto;
   }
   &:hover {
-    background-color: $quaternary;
+    background-color: $primaryOrange;
     border-radius: 0;
     padding-bottom: 1em;
   }
+}
+
+.block-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 95%;
+  border: 2px solid $highlightPurple;
+  border-radius: 10px;
+  color: $textBlack;
+}
+.block-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 95%;
+  border: 2px solid $secondaryOrange;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em auto;
+}
+
+.btn-round {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  font-size: 1.6rem;
 }
 
 .grid {
@@ -59,7 +93,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $primary;
+  background-color: $primaryWhite;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -73,7 +107,7 @@
 .image-card {
   display: flex;
   flex-direction: row;
-  background-color: $primary;
+  background-color: $primaryWhite;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -83,14 +117,14 @@
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     .image-frame {
-      background-color: $quaternary;
+      background-color: $primaryOrange;
     }
     .education {
       transform: scale(1.4) rotate(20deg) translate(30px, -10px);
       // transform: rotate(-20deg) scale(1.2);
     }
     .info .timeframe:after {
-      background-color: $quaternary;
+      background-color: $primaryOrange;
       width: 120px;
     }
   }
@@ -98,7 +132,7 @@
     position: relative; // Ensures image stays within frame
     flex-basis: 100%; // Width of image window
     height: auto;
-    background-color: $secondary;
+    background-color: $primaryBlue;
     transition: 0.3s;
     overflow: hidden;
   }
@@ -117,7 +151,7 @@
         content: "";
         position: absolute;
         height: 5px;
-        background-color: $secondary;
+        background-color: $primaryBlue;
         width: 35px;
         top: 5em;
         left: 1em;
@@ -158,22 +192,23 @@
 .grid-card {
   padding: 1rem;
   border-radius: 10px;
-  color: #ffffff;
-  background-color: $tertiary;
-  border: 3px solid $primary;
+  color: $textBlack;
+  background-color: $primaryWhite;
+  border: 3px solid $primaryWhite;
   justify-self: center;
   align-items: flex-start;
   height: 20em;
   width: 15em;
   position: relative;
   &:hover {
-    background-color: $secondary;
+    background-color: $primaryBlue;
+    color: $textWhite;
     .title {
       color: #ffffff;
     }
     .location {
-      background-color: $quaternary;
-      padding: 0.1em 0.25em;
+      background-color: $primaryOrange;
+      padding: 0.1em 0.4em;
       border-radius: 10em;
     }
     .description {
@@ -181,7 +216,6 @@
     }
   }
   .title {
-    color: #000000;
     margin: 0;
     font-size: 1.5em;
     line-height: 1.2em;
@@ -212,8 +246,8 @@
   height: auto;
   text-align: center;
   border-radius: 12px;
-  border: 1px solid $tertiary;
-  border-left: 3px solid $secondary;
-  border-right: 3px solid $quaternary;
+  // border: 1px solid $primaryGrey;
+  border-left: 3px solid $primaryBlue;
+  border-right: 3px solid $primaryOrange;
   padding: 0.4em;
 }

@@ -4,7 +4,7 @@
     {% include headerImg.html %}
     <ul class="navigation">
       {% for item in site.data.navbar %}
-        <li class="nav-item"><a class="nav-link" href="{{ item.link }}"> {{ item.name }}</a></li>
+        <li class="nav-item"><a class="nav-link {{ item.colour }}" href="{{ item.link }}"> {{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>

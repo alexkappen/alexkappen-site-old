@@ -50,14 +50,14 @@ goes out of the box on hover (remove perspective if you don't want the 3D effect
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: $primary;
+  background-color: $primaryWhite;
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  border-top: 3px solid $quaternary;
-  background-color: $secondary;
+  border-top: 3px solid $primaryOrange;
+  background-color: $primaryBlue;
   color: white;
   transform: rotateY(180deg);
 }

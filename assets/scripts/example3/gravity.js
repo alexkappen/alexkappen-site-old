@@ -2,7 +2,7 @@
  * https://www.youtube.com/watch?v=3b7FyIxWW94&list=PLpPnRKq7eNW3We9VdCfx9fprhqXHwTPXL&index=5
  */
 
-const colours = ['#2185C5', '#7ECEFD', '#FFF6E5', '#FF7F66'];
+// const colours = ['#2185C5', '#7ECEFD', '#FFF6E5', '#FF7F66'];
 const gravity = 1;
 const friction = 0.70;
 
@@ -78,7 +78,7 @@ function ballInit() {
     let y = randomIntFromRange(radius, canvas.height - radius);
     let dx = randomIntFromRange(-2, 2);
     let dy = randomIntFromRange(-2, 2);
-    let colour = randomColour(colours)
+    let colour = randomColour(colourArray)
     ballArray.push(new Ball(x, y, dx, dy, radius, colour));
   }
 }

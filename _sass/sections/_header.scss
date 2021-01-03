@@ -1,5 +1,5 @@
 header {
-  background-color: $primary;
+  background-color: $primaryWhite;
   width: 100%;
   height: 100vh;
   padding: 4em 2em;
@@ -11,7 +11,7 @@ h1 {
 }
 
 .svg-frame {
-  width: 20em;
+  width: 24em;
   height: auto;
   margin: 0.5em auto;
 }
@@ -32,15 +32,12 @@ ul.navigation {
 }
 
 .nav-link {
+  color: $textBlack;
   margin: auto;
   padding: 0.5em 1em;
-  color: #ffffff;
-  background-color: $secondary;
   border-radius: 5px;
   text-decoration: none;
   &:hover {
-    color: #ffffff;
-    background-color: $quaternary;
-    padding: 1em 1em;
+    padding: 0.8em 1em;
   }
 }

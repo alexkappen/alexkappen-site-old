@@ -1,10 +1,10 @@
 let maxRadius = 40;
 let colourArray = [
-  '#445CA6',
-  '#38A654',
-  '#F29F05',
-  '#F28705',
-  '#F24405'
+  '#0C6ACB',
+  '#00AAF2',
+  '#FB4B3E',
+  '#FAB70B',
+  '#874DBD'
 ];
 
 class Circle {

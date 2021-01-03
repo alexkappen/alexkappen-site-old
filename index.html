@@ -4,7 +4,6 @@ permalink: "/"
 layout: default
 ---
 
-
 <section id="skills">
   <h2>Skills</h2>
   <div id="skills-showcase">
@@ -23,14 +22,18 @@ layout: default
     </div>
   </div>
   <div class="coding-examples grid">
-    <div class="transparent-card">
+    <div class="block-left">
       <h3>JavaScript Coding Examples</h2>
-      <button id="bubbles" class="reveal-canvas">Example 1</button>
-      <button id="reveal-svg-draw">Example 2</button>
-      <button id="gravity" class="reveal-canvas">Example 3</button>
+      <div class="btn-group">
+        <button id="bubbles" class="reveal-canvas btn-round">1</button>
+        <button id="reveal-svg-draw" class="btn-round">2</button>
+        <button id="gravity" class="reveal-canvas btn-round">3</button>
+      </div>
     </div>
-    <div class="svg-draw">
-      {% include bean.html %}
+    <div class="block-right">
+      <div class="svg-draw">
+        {% include bean.html %}
+      </div>
     </div>
   </div>
 </section>

@@ -1,9 +1,62 @@
-$primary: #ffffff;
+// New Colour Palette (by Candela Rota from Adobe Color)
 
-$secondary:#0b45c2;
+$primaryWhite: #ffffff;
+$primaryGrey: #40403E;
+$primaryBlack: #080808;
 
-$tertiary: #c4c3c3;
+$primaryBlue: #0C6ACB;
+$secondaryBlue: #00AAF2;
 
-$quaternary: #ff864f;
+$primaryOrange: #FB4B3E;
+$secondaryOrange: #FAB70B;
 
-$textColour: rgb(0, 0, 0);
+$highlightPurple: #874DBD;
+
+$textBlack: #000000;
+$textGrey: #40403E;
+$textWhite: #ffffff;
+
+.primaryBlue {
+  border: 2px solid $primaryBlue;
+  background-color: $primaryWhite;
+  &:hover {
+    background-color: $primaryBlue;
+    color: $textWhite;
+  }
+}
+
+.secondaryBlue {
+  border: 2px solid $secondaryBlue;
+  background-color: $primaryWhite;
+  &:hover {
+    background-color: $secondaryBlue;
+    color: $textWhite;
+  }
+}
+
+.primaryOrange {
+  border: 2px solid $primaryOrange;
+  background-color: $primaryWhite;
+  &:hover {
+    background-color: $primaryOrange;
+    color: $textWhite;
+  }
+}
+
+.secondaryOrange {
+  border: 2px solid $secondaryOrange;
+  background-color: $primaryWhite;
+  &:hover {
+    background-color: $secondaryOrange;
+    color: $textWhite;
+  }
+}
+
+.highlightPurple {
+  border: 2px solid $highlightPurple;
+  background-color: $primaryWhite;
+  &:hover {
+    background-color: $highlightPurple;
+    color: $textWhite;
+  }
+}
