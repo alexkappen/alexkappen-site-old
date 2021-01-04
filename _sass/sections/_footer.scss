@@ -11,3 +11,15 @@ footer {
     }
   }
 }
+
+.resume-pdf {
+  padding: 8px 16px;
+  // margin-bottom: 1em;
+  border-radius: 4px;
+  background-color: $secondaryBlue;
+  color: $textWhite;
+  &:hover {
+    background-color: $primaryWhite;
+    color: $primaryBlue;
+  }
+}

@@ -2,17 +2,18 @@
   title: "Coding"
   date: 2020-07-01
   description: 
-    - detail: '<strong>Web Front-end:</strong> Self-taught HTML, CSS, JavaScript skills. Developed <a href="https://alexkappen.github.io/" target="_blank">resume website</a>, and <a href="https://imakappa.github.io/" target="_blank">blog site</a>'
-    - detail: "<strong>Ruby/Ruby on Rails:</strong> Developed mock social media platform, Jekyll static site development"
+    - detail: '<strong>Web Dev:</strong> Self-taught HTML, CSS, JS. Search Engine Optimization. Developed <a href="https://alexkappen.github.io/" target="_blank">resume website</a>, and <a href="https://imakappa.github.io/" target="_blank">blog site</a>'
     - detail: "<strong>Python:</strong> Web scraping, file manipulation (Excel, JSON, XML, etc)"
-    - detail: "<strong>Java:</strong> Data structures and algorithms"
+    - detail: "<strong>JavaScript:</strong> Canvas API, DOM manipulation"
+    - detail: "<strong>Ruby/Ruby on Rails:</strong> Software-as-a-Service rails apps, Jekyll static site generation"
+    - detail: "<strong>Other languages:</strong> Java, C#"
     - detail: "<strong>Version Control:</strong> Git and GitHub"
 - videoediting:
   title: "Video Editing"
   date: 2020-03-01
   description: 
-    - detail: Fusion (in Da Vinci Resolve)
-    - detail: Colour grading, Motion graphics & text animations
+    - detail: "<strong>Fusion (Da Vinci Resolve):</strong> text & image animations, masking" 
+    - detail: Colour grading, object removal
     - detail: YouTube video creation
 - firstaid:
   title: "First Aid and Aquatics"
@@ -36,7 +37,7 @@
   location: "Royal Conservatory of Music (RCM)"
   timeframe: "Jul 2010 - Aug 2014"
   description:
-    - detail: Level 10 Piano Practical exam (Technical & Studies) 
-    - detail: Level 9 Practical exam, Level 9 Music History I exam
-    - detail: Advanced & Intermediate Rudiments exams
-    - detail: Levels 4, 6, 7, 8 Practical exams
+  - detail: "<strong>Royal Conservatory of Music:</strong> Grades 4 - 10, Advanced Rudiments, Western Music History" 
+  - detail: "<strong>Concert Performances:</strong> Featured young artist in 2018 BCMCS classical concert; community performance in 2015"
+  - detail: "<strong>YouTube:</strong> Produce piano videos for a couple thousand subscribers"
+

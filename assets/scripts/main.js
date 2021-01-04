@@ -28,7 +28,9 @@ addEventListener('resize', () => {
 
 // Animation Controls
 let globalID;
-let currentInit;
+let currentInit = function () {
+  return null;
+};
 let currentAnim;
 
 function start(initialize, animation) {
