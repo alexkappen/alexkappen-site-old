@@ -3,6 +3,7 @@
   date: 2020-07-01
   description: 
     - detail: '<strong>Web Dev:</strong> Self-taught HTML, CSS, JS. Search Engine Optimization. Developed <a href="https://alexkappen.github.io/" target="_blank">resume website</a>, and <a href="https://imakappa.github.io/" target="_blank">blog site</a>'
+    - detail: '<strong>Data Science</strong>: NumPy, Pandas, TensorFlow, Scikit-Learn'
     - detail: "<strong>Python:</strong> Web scraping, file manipulation (Excel, JSON, XML, etc)"
     - detail: "<strong>JavaScript:</strong> Canvas API, DOM manipulation"
     - detail: "<strong>Ruby/Ruby on Rails:</strong> Software-as-a-Service rails apps, Jekyll static site generation"
