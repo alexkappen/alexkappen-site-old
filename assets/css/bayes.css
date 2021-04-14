@@ -27,3 +27,9 @@ h3 {
 footer p {
   text-align: end;
 }
+
+@media print {
+  img {
+    width: 40%;
+  }
+}

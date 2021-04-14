@@ -52,6 +52,8 @@ let item = document.querySelector(".itemInput").value;
 let randomItems = ["watch", "alarm clock", "Kermit the Frog muppet", "Nintendo DS",
 "keys"];
 
+randomItems = ["watch"];
+
 if (item === null || item === "no" || item === "") {
   const randomIndex = Math.floor(Math.random() * randomItems.length);
   item = randomItems[randomIndex];

@@ -59,6 +59,9 @@ class BayesianSearcher {
 
         text(`${locations[index]}`, x, y - cellHeight / 4, cellWidth, cellHeight);
         text("EU=" + round(this.priors[index] * this.easeOfDetection[index], 4), x, y, cellWidth, cellHeight);
+        textSize(10);
+        text(`P(${locations[index]} | D) = ${round(this.priors[index], 4)}`, x, y + cellHeight / 4, cellWidth, cellHeight);
+        textSize(16);
       }
     }
   }

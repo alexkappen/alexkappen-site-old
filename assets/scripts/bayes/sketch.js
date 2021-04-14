@@ -13,7 +13,7 @@ let bayesianSearcher;
 searcherHTML = document.getElementById("bayesianSearcher");
 
 function setup() {
-  let renderer = createCanvas(500, 300);
+  let renderer = createCanvas(600, 400);
   renderer.parent(searcherHTML)
   frameRate(2);
   noLoop();
@@ -56,4 +56,10 @@ startLoopBtn.onclick = function () {
   }
   iterations += 1;
   loop();
+}
+
+let oneLoopBtn = document.querySelector(".oneLoop");
+oneLoopBtn.onclick = function () {
+  iterations += 1;
+  draw();
 }

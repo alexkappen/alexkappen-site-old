@@ -18,8 +18,8 @@ layout: bayesLayout
           <input type="text" name="itemInput" class="itemInput form-control">
         </div>
         <div class="modal-footer">
-          <button type="button" class="randomBtn btn btn-secondary" data-bs-dismiss="modal">Give me a random item!</button>
-          <button type="button" class="itemBtn btn btn-primary" data-bs-dismiss="modal">OK</button>
+          <button type="button" class="randomBtn btn-secondary" data-bs-dismiss="modal">Give me a random item!</button>
+          <button type="button" class="itemBtn btn-primary" data-bs-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
@@ -27,16 +27,16 @@ layout: bayesLayout
 </header>
 
 <main class="">
-  <section class="container">
-    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Click Me!</button>
+  <section class="container-fluid">
+    <button type="button" class="btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Click Me!</button>
     <div class="row">
       <div class="col-md-8">
         <p>The office room was in disarray. I had neglected it, opting instead to study for Bayesian Inference. Books and papers were strewn about, and the desk drawers were brimming with stationary, coins, cables, and trinkets.
           Stacks of boxes occupied the corners of the room, while the shelves extended the mess vertically; They were haphazardly filled with binders and books, and crowned with model airplanes, picture frames, and dust.
         The filing cabinets seemed to contain everything but actual files: electronics and wires, measuring tapes, a rubber frog, boxes of broken crayons, and ... was that my missing <span class="item"></span>?</p>
-        <p>I better do some spring cleaning in here, I thought. But, I have a dentist appointment soon, so maybe I'll just do it later. I set the <span class="item"></span> on the desk and went to get ready for the appointment.</p>
-        <p>I returned home, intent on making the office room even cleaner than my teeth. I opened the office room door and saw that the room was ... already clean? I guess my mother had cleaned the room while I was gone. 
-          I went to the desk to retrieve the <span class="item"></span> I had found earlier, and ... it wasn't there. What are the odds I find my missing <span class="item"></span>, only to lose it again the same day? I was determined to recover it.
+        <p>I better do some spring cleaning in here, I thought. But I have a dentist appointment soon, so maybe I'll just do it later. I set the <span class="item"></span> on the desk and went to get ready for the appointment.</p>
+        <p>I returned home, intent on making the office room even cleaner than my teeth. I opened the office room door and saw that the room was ... already clean? I guess my mother had tidied up the room while I was gone. 
+          I went to the desk to retrieve the <span class="item"></span> I had found earlier, and ... it wasn't there. What are the odds I found my missing <span class="item"></span>, only to lose it again the same day? I was determined to recover it.
           
         </p>
         <p>I checked my phone. I had an unread text from my mother, saying: "Didn't take anything out of the office room, just tidied it up while you were away. Went out for groceries." 
@@ -52,7 +52,7 @@ layout: bayesLayout
     </div>
   </section>
 
-  <section class="container">
+  <section class="container-fluid">
     <div class="row">
       <div class="col-md-6">
         <h4>Where could the <span class="item"></span> be?</h4>
@@ -61,7 +61,7 @@ layout: bayesLayout
           <p>For every iteration of the algorithm, I keep track of the square that has the highest expected utility.</p>
           <p>This isn't necessarily the same as searching the square with the highest probability of having the <span class="item"></span></p>
           <p>For example, the filing cabinet might have a pretty high chance of containing the lost item,
-            but it's a lot harder to search the filing cabinet than the waste paper basket, therefore it's less likely overall that I would find the lost item in there.
+            but it's a lot harder to search the filing cabinet than the waste paper basket, therefore it's less likely overall that I would find the lost item in the filing cabinet.
           </p>
         </div>
       </div>
@@ -73,7 +73,7 @@ layout: bayesLayout
           <h4>Bayesian Search Algorithm</h4>
           <ol>
             <li>I keep track of the best square to search (the one with the highest expected utility of finding the <span class="item"></span>)</li>
-            <li>Assuming I don't find the item, I update my priors and expected utilities of searching every square.</li>
+            <li>Assuming I don't find the <span class="item"></span>, I update my priors and expected utilities of searching every square.</li>
             <li>Then, I go back to step 1 (unless I want to stop searching)</li>
           </ol>
         </div>
@@ -107,8 +107,9 @@ layout: bayesLayout
 
   <section class="container">
     <div class="content">
-     <p class="text-center">In other words, to calculate the expected utilities I just mutiply the ease of detection by the most updated priors.</p>
-     <p class="text-center">I do that for every square for every iteration, updating my priors and keeping track of the squares that have the highest expected utilities.</p>
+     <p class="text-center">Therefore, to calculate the expected utilities I just multiply the ease of detection by the most updated priors.
+      I use Bayes Formula as outlined above to update my priors.
+     </p>
     </div>
   </section>
 
@@ -116,13 +117,14 @@ layout: bayesLayout
     <div class="content bg-light m-3 text-center">
       <h3>Bayesian Search</h3>
       <p>Below is a schematic of the office room. The numbers are the expected utility (EU) of searching the square.</p>
+      <button class="oneLoop btn-success m-auto">Perform 1 Search</button>
       <button class="startLoop btn-primary m-auto">Perform 10 Searches</button>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div id="bayesianSearcher" class=""></div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <h4>Best Search Sequence</h4>
         <ol class="searchSequence"></ol>
       </div>
@@ -131,7 +133,7 @@ layout: bayesLayout
 
   <section class="container">
       <div class="content text-center mt-5">
-        <p>After a few rounds of searching, I found my <span class="item"></span> :)</p>
+        <p>I began my search using the above search sequence as a guide. After a few rounds of searching, I found my <span class="item"></span> :)</p>
       </div>
   </section>
 
