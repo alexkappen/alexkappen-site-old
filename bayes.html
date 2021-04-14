@@ -1,0 +1,132 @@
+---
+title: "Everyday Bayes"
+permalink: "/bayes"
+layout: bayesLayout
+---
+<header class="container-fluid">
+  <div class="content">
+    <h1>Everyday Bayes</h1>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enter an item:</h5>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="itemInput" class="itemInput form-control">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="randomBtn btn btn-secondary" data-bs-dismiss="modal">Give me a random item!</button>
+          <button type="button" class="itemBtn btn btn-primary" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="">
+  <section class="container">
+    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Click Me!</button>
+    <div class="row">
+      <div class="col-md-8">
+        <p>The office room was in disarray. I had neglected it, opting instead to study for Bayesian Inference. Books and papers were strewn about, and the desk drawers were brimming with stationary, coins, cables, and trinkets.
+          Stacks of boxes occupied the corners of the room, while the shelves extended the mess vertically; They were haphazardly filled with binders and books, and crowned with model airplanes, picture frames, and dust.
+        The filing cabinets seemed to contain everything but actual files: electronics and wires, measuring tapes, a rubber frog, boxes of broken crayons, and ... was that my missing <span class="item"></span>?</p>
+        <p>I better do some spring cleaning in here, I thought. But, I have a dentist appointment soon, so maybe I'll just do it later. I set the <span class="item"></span> on the desk and went to get ready for the appointment.</p>
+        <p>I returned home with clean mouth and set my intentions on making the office room even cleaner. I opened the office room door and saw that the room was ... already clean? I guess my mother had cleaned the room while I was gone. 
+          I went to the desk to retrieve the <span class="item"></span> I had found earlier, and ... it wasn't there. She must have spring cleaned it away!</p>
+        <p>Now, my mother had gone out for groceries so I couldn't ask her where she put the <span class="item"></span>.
+        However, I did know enough about her organization methods to estimate some probabilities about where the <span class="item"></span> might be (see the table below).
+        Additionally, I really didn't want to spend so much time searching, so I decided to check a new part of the room every 5 minutes.
+        I asked myself: <strong>In what order do I search the room to minimize the amount of time I spend searching?</strong></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="{{ '/assets/img/bayes/samet-kurtkus-HKFgPPPLdyI-unsplash.jpg' | relative_url }}" class="img-fluid" alt="Messy Office Room" width="80%">
+        <p>Photo by <a target="_blank" href="https://unsplash.com/@sametkurtkus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samet Kurtkus</a> on <a target="_blank" href="https://unsplash.com/s/photos/messy-office?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Where could the <span class="item"></span> be?</h3>
+        <table class="table"></table>
+        <div class="card content">
+          <p>For every iteration of the algorithm, I keep track of the square that has the highest expected utility.</p>
+          <p>This isn't necessarily the same as searching the square with the highest probability of having the <span class="item"></span></p>
+          <p>For example, the filing cabinet might have a pretty high chance of containing the lost item,
+            but it's a lot harder to search the filing cabinet than the waste paper basket, therefore it's less likely overall that I would find the lost item in there.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <hr>
+        <p>Fortunately, I've taken a Bayesian Inference course, which means I can figure out the best order using the Bayesian Search Algorithm!</p>
+        <div class="card content">
+          <h4>Bayesian Search Algorithm</h4>
+          <ol>
+            <li>I keep track of the best square to search (the one with the highest expected utility of finding the <span class="item"></span>)</li>
+            <li>Assuming I don't find the item, I update my priors and expected utilities of every square.</li>
+            <li>Then, I go back to step 1 (unless I want to stop searching)</li>
+          </ol>
+        </div>
+        <div class="m-1">
+          <h6>Outlined below is how the search would operate on a particular square, \( k \):</h6>
+          <p>Hypothesis: \( H_k: \) the <span class="item"></span> is in square k</p>
+          <p>Priors: \( P(H_k)\) is given in the table to the left</p>
+          <p>Data: A 5 min search fails to find the <span class="item"></span> in square k</p>
+          <p>Likelihoods:</p>
+          <ul>
+            <li>\( P(D | H_k) = 1 - U(search k | H_k) \) = 1 - (Ease of Detection for square k)</li>
+            <li>\( P(D | H_i) = 1 \) for all \( i \neq k \)</li>
+          </ul>
+          <p>Posteriors:</p>
+          <p>\( P(H_k | D) = \frac{P(D | H_k) P(H_k)}{P(D | H_K) P(H_K) + \sum P(H_i)} \) for all \( i \neq k \)</p>
+          <p>\( P(H_i | D) = \frac{P(H_i)}{P(D | H_k) P(H_k) + \sum P(H_i)}\) all \( i \neq k \)</p>
+          <p>Once I have the posteriors I can calculate the expected utility of the search:</p>
+          <p>
+            Let n be the number of 5 min search periods
+            \( EU(search k)_{n=1} = U(search k | H_k) P(H_k) \)
+          </p>
+          <p>
+            And for future 5 min searches (n > 1, and dn-1 is the data from the previous search):
+            \( EU(search k | d_{n-1})_{n} = U(search k | H_k) P(H_k | d_{n-1} ) \)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="content">
+     <p class="text-center">In other words, to calculate the expected utilities I just mutiply the ease of detection by the most updated priors.</p>
+     <p class="text-center">I do that for every square for every iteration, keeping track of the squares that have the highest expected utilities.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="content bg-light m-3 text-center">
+      <h4>Interactive Bayesian Searcher</h4>
+      <p>Below is a schematic of the office room. The numbers are the expected utility (EU) of searching the square.</p>
+      <button class="startLoop btn-primary m-auto">Perform 10 Searches</button>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="bayesianSearcher" class=""></div>
+      </div>
+      <div class="col-md-6">
+        <h3>Best Search Sequence</h3>
+        <ol class="searchSequence"></ol>
+      </div>
+    </div>
+  </section>
+
+  <script src="{{ '/assets/scripts/bayes/BayesianSearcher.js' | relative_url }}"></script>
+  <script src="{{ '/assets/scripts/bayes/sketch.js' | relative_url }}"></script>
+  <script src="{{ '/assets/scripts/bayes/main.js' | relative_url }}"></script>
+</main>
+<footer class="footer mt-auto py-3 bg-light"><div class="content"><p>Made by Alex Kappen. 2021</p></div></footer>
