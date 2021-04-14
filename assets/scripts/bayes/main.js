@@ -49,7 +49,8 @@ generateTableHead(table, searchKeys);
 // --- ADLIBS
 let item = document.querySelector(".itemInput").value;
 
-let randomItems = ["watch", "alarm clock", "Kermit the Frog muppet", "pair of winter gloves"];
+let randomItems = ["watch", "alarm clock", "Kermit the Frog muppet", "Nintendo DS",
+"keys"];
 
 if (item === null || item === "no" || item === "") {
   const randomIndex = Math.floor(Math.random() * randomItems.length);
@@ -73,8 +74,6 @@ let randomBtn = document.querySelector(".randomBtn");
 itemBtn.onclick = function () {
   let item = document.querySelector(".itemInput").value;
 
-  let randomItems = ["watch", "alarm clock", "Kermit the Frog muppet", "winter gloves"];
-
   if (item === null || item === "no" || item === "") {
     const randomIndex = Math.floor(Math.random() * randomItems.length);
     item = randomItems[randomIndex];
@@ -90,8 +89,6 @@ itemBtn.onclick = function () {
 
 // When the user clicks on <span> (x), close the modal
 randomBtn.onclick = function () {
-  let randomItems = ["watch", "alarm clock", "Kermit the Frog muppet", "winter gloves"];
-
   const randomIndex = Math.floor(Math.random() * randomItems.length);
   item = randomItems[randomIndex];
 

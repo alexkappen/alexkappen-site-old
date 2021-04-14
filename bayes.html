@@ -35,11 +35,14 @@ layout: bayesLayout
           Stacks of boxes occupied the corners of the room, while the shelves extended the mess vertically; They were haphazardly filled with binders and books, and crowned with model airplanes, picture frames, and dust.
         The filing cabinets seemed to contain everything but actual files: electronics and wires, measuring tapes, a rubber frog, boxes of broken crayons, and ... was that my missing <span class="item"></span>?</p>
         <p>I better do some spring cleaning in here, I thought. But, I have a dentist appointment soon, so maybe I'll just do it later. I set the <span class="item"></span> on the desk and went to get ready for the appointment.</p>
-        <p>I returned home with clean mouth and set my intentions on making the office room even cleaner. I opened the office room door and saw that the room was ... already clean? I guess my mother had cleaned the room while I was gone. 
-          I went to the desk to retrieve the <span class="item"></span> I had found earlier, and ... it wasn't there. She must have spring cleaned it away!</p>
-        <p>Now, my mother had gone out for groceries so I couldn't ask her where she put the <span class="item"></span>.
-        However, I did know enough about her organization methods to estimate some probabilities about where the <span class="item"></span> might be (see the table below).
-        Additionally, I really didn't want to spend so much time searching, so I decided to check a new part of the room every 5 minutes.
+        <p>I returned home, intent on making the office room even cleaner than my teeth. I opened the office room door and saw that the room was ... already clean? I guess my mother had cleaned the room while I was gone. 
+          I went to the desk to retrieve the <span class="item"></span> I had found earlier, and ... it wasn't there. What are the odds I find my missing <span class="item"></span>, only to lose it again the same day? I was determined to recover it.
+          
+        </p>
+        <p>I checked my phone. I had an unread text from my mother, saying: "Didn't take anything out of the office room, just tidied it up while you were away. Went out for groceries." 
+          My mother doesn't touch her phone while out in public given the circumstances, which meant I wouldn't get a reply if I texted her about where she put the <span class="item"></span>.
+        However, I did know enough about her organization methods to estimate some probabilities about where the <span class="item"></span> might be.
+        Additionally, I didn't want to spend too much time searching because exams were coming up and I needed to study. So, I decided to check a new part of the room every 5 minutes.
         I asked myself: <strong>In what order do I search the room to minimize the amount of time I spend searching?</strong></p>
       </div>
       <div class="col-md-4 text-center">
@@ -52,7 +55,7 @@ layout: bayesLayout
   <section class="container">
     <div class="row">
       <div class="col-md-6">
-        <h3>Where could the <span class="item"></span> be?</h3>
+        <h4>Where could the <span class="item"></span> be?</h4>
         <table class="table"></table>
         <div class="card content">
           <p>For every iteration of the algorithm, I keep track of the square that has the highest expected utility.</p>
@@ -65,12 +68,12 @@ layout: bayesLayout
 
       <div class="col-md-6">
         <hr>
-        <p>Fortunately, I've taken a Bayesian Inference course, which means I can figure out the best order using the Bayesian Search Algorithm!</p>
+        <p>Fortunately, I took a Bayesian Inference course, which meant I could figure out the best order using the Bayesian Search Algorithm!</p>
         <div class="card content">
           <h4>Bayesian Search Algorithm</h4>
           <ol>
             <li>I keep track of the best square to search (the one with the highest expected utility of finding the <span class="item"></span>)</li>
-            <li>Assuming I don't find the item, I update my priors and expected utilities of every square.</li>
+            <li>Assuming I don't find the item, I update my priors and expected utilities of searching every square.</li>
             <li>Then, I go back to step 1 (unless I want to stop searching)</li>
           </ol>
         </div>
@@ -87,13 +90,14 @@ layout: bayesLayout
           <p>Posteriors:</p>
           <p>\( P(H_k | D) = \frac{P(D | H_k) P(H_k)}{P(D | H_K) P(H_K) + \sum P(H_i)} \) for all \( i \neq k \)</p>
           <p>\( P(H_i | D) = \frac{P(H_i)}{P(D | H_k) P(H_k) + \sum P(H_i)}\) all \( i \neq k \)</p>
-          <p>Once I have the posteriors I can calculate the expected utility of the search:</p>
+          <p>Once I have the posteriors I can calculate the expected utility of the search. The utility of searching a square i (that hypothetically doesn't have the item) is 0. 
+            Therefore, the Expected Utility (EU) of searching square k only depends on the posterior and utility of searching square k</p>
           <p>
-            Let n be the number of 5 min search periods
+            Let n be the number of 5 min searches:
             \( EU(search k)_{n=1} = U(search k | H_k) P(H_k) \)
           </p>
           <p>
-            And for future 5 min searches (n > 1, and dn-1 is the data from the previous search):
+            EU for future 5 min searches (n > 1, and dn-1 is the data from the previous search):
             \( EU(search k | d_{n-1})_{n} = U(search k | H_k) P(H_k | d_{n-1} ) \)
           </p>
         </div>
@@ -104,13 +108,13 @@ layout: bayesLayout
   <section class="container">
     <div class="content">
      <p class="text-center">In other words, to calculate the expected utilities I just mutiply the ease of detection by the most updated priors.</p>
-     <p class="text-center">I do that for every square for every iteration, keeping track of the squares that have the highest expected utilities.</p>
+     <p class="text-center">I do that for every square for every iteration, updating my priors and keeping track of the squares that have the highest expected utilities.</p>
     </div>
   </section>
 
   <section class="container">
     <div class="content bg-light m-3 text-center">
-      <h4>Interactive Bayesian Searcher</h4>
+      <h3>Bayesian Search</h3>
       <p>Below is a schematic of the office room. The numbers are the expected utility (EU) of searching the square.</p>
       <button class="startLoop btn-primary m-auto">Perform 10 Searches</button>
     </div>
@@ -119,10 +123,16 @@ layout: bayesLayout
         <div id="bayesianSearcher" class=""></div>
       </div>
       <div class="col-md-6">
-        <h3>Best Search Sequence</h3>
+        <h4>Best Search Sequence</h4>
         <ol class="searchSequence"></ol>
       </div>
     </div>
+  </section>
+
+  <section class="container">
+      <div class="content text-center mt-5">
+        <p>After a few rounds of searching, I found my <span class="item"></span> :)</p>
+      </div>
   </section>
 
   <script src="{{ '/assets/scripts/bayes/BayesianSearcher.js' | relative_url }}"></script>
