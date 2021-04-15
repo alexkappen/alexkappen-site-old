@@ -50,7 +50,7 @@ generateTableHead(table, searchKeys);
 let item = document.querySelector(".itemInput").value;
 
 let randomItems = ["watch", "alarm clock", "Kermit the Frog muppet", "Nintendo DS",
-"keys", "Swiss Army knife"];
+"water bottle", "Swiss Army knife", "shirt"];
 
 if (item === null || item === "no" || item === "") {
   const randomIndex = Math.floor(Math.random() * randomItems.length);

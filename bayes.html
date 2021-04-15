@@ -88,20 +88,22 @@ layout: bayesLayout
           </ol>
         </div>
         <div class="content m-1">
-          <h5>Outlined below is how the search would operate on a particular square, \( k \):</h5>
-          <p><strong>Hypothesis:</strong> \( H_k: \) the <span class="item"></span> is in square k</p>
-          <p><strong>Priors:</strong> \( P(H_k)\) is given in the table to the left</p>
-          <p><strong>Data:</strong> A 5-minute search fails to find the <span class="item"></span> in square k</p>
+          <h5>Outlined below is how the search works in general:</h5>
+          <p><strong>Hypothesis:</strong> \( H_i: \) the <span class="item"></span> is in square \( i \)</p>
+          <p><strong>Priors:</strong> \( P(H_i)\) is given in the table to the left, for all \( i \)</p>
+          <p><strong>Data:</strong> A 5-minute search fails to find the <span class="item"></span> in square m</p>
           <p><strong>Likelihoods:</strong></p>
           <ul>
-            <li>\( P(D | H_k) = 1 - U(search k | H_k) \) = 1 - (Ease of Detection for square k)</li>
-            <li>\( P(D | H_i) = 1 \) for all \( i \neq k \)</li>
+            <li>\( P(D | H_m) = 1 - U(search k | H_m) \) = 1 - (Ease of Detection for square m)</li>
+            <li>\( P(D | H_i) = 1 \) for all \( i \neq m \)</li>
           </ul>
           <p><strong>Posteriors:</strong></p>
-          <p>\( P(H_k | D) = \frac{P(D | H_k) P(H_k)}{P(D | H_K) P(H_K) + \sum P(H_i)} \) for all \( i \neq k \)</p>
-          <p>\( P(H_i | D) = \frac{P(H_i)}{P(D | H_k) P(H_k) + \sum P(H_i)}\) all \( i \neq k \)</p>
-          <p>Once I have the posteriors I can calculate the expected utility of the search. The utility of searching a square i (that hypothetically doesn't have the item) is 0. 
-            Therefore, the Expected Utility (EU) of searching square k only depends on the posterior and utility of searching square k</p>
+          <p>\( P(H_m | D) = \frac{P(D | H_m) P(H_m)}{P(D | H_m) P(H_m) + \sum P(H_i)} \) for all \( i \neq m \)</p>
+          <p>\( P(H_i | D) = \frac{P(H_i)}{P(D | H_m) P(H_m) + \sum P(H_i)}\) all \( i \neq m \)</p>
+          
+          <p><strong>Expected Utilities:</strong></p>
+          <p>Once I have the posteriors I can calculate the Expected Utility (EU) of searching each square. The utility of searching a square i that hypothetically doesn't have the item is 0. 
+            Therefore, the EU of searching some square k, which I assume does have the item, only depends on the posterior and utility of searching square k</p>
           <p>
             Let n be the number of 5 min searches:
             \( EU(search k)_{n=1} = U(search k | H_k) P(H_k) \)
@@ -110,16 +112,9 @@ layout: bayesLayout
             EU for future 5 min searches (n > 1, and dn-1 is the data from the previous search):
             \( EU(search k | d_{n-1})_{n} = U(search k | H_k) P(H_k | d_{n-1} ) \)
           </p>
+          <p>Therefore, the next place I search is the location with the highest Expected Utility</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="container">
-    <div class="content">
-     <p class="text-center">Therefore, to calculate the expected utilities I just multiply the ease of detection by the posteriors.
-      I use Bayes Formula as outlined above to update my priors.
-     </p>
     </div>
   </section>
 
