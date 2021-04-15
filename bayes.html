@@ -4,15 +4,18 @@ permalink: "/bayes"
 layout: bayesLayout
 ---
 <header class="container-fluid">
-  <div class="content">
-    <h1>Everyday Bayes</h1>
-  </div>
+  <nav class="navbar navbar-nav navbar-light bg-light">
+    <div class="content text-center">
+      <h1>Everyday Bayes</h1>
+      <h3 class="text-secondary">Psych 4KK3</h3>
+    </div>
+  </nav>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Enter an item:</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Enter an item to modify the story:</h5>
         </div>
         <div class="modal-body">
           <input type="text" name="itemInput" class="itemInput form-control">
@@ -28,7 +31,9 @@ layout: bayesLayout
 
 <main class="">
   <section class="container-fluid">
-    <button type="button" class="btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Click Me!</button>
+    <div class="content">
+      <button type="button" class="btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Click me to change the story</button>
+    </div>
     <div class="row">
       <div class="col-md-8">
         <p>The office room was in disarray. I had neglected it, opting instead to study for Bayesian Inference. Books and papers were strewn about, and the desk drawers were brimming with stationary, coins, and trinkets.
@@ -56,38 +61,43 @@ layout: bayesLayout
     <div class="row">
       <div class="col-md-6">
         <h4>Where could the <span class="item"></span> be?</h4>
-        <table class="table"></table>
-        <div class="card content">
-          <p>For every iteration of the algorithm, I keep track of the square that has the highest expected utility.</p>
-          <p>This isn't necessarily the same as searching the square with the highest probability of having the <span class="item"></span></p>
-          <p>For example, the filing cabinet might have a pretty high chance of containing the lost item,
-            but it's a lot harder to search the filing cabinet than the waste paper basket, therefore it's less likely overall that I would find the lost item in the filing cabinet.
-          </p>
+        <table class="table table-striped table-hover"></table>
+        <div class="card border-primary">
+          <div class="card-header text-center border-primary">
+            Side Note
+          </div>
+          <div class="card-body">
+            <p>For every iteration of the algorithm, I keep track of the square that has the highest expected utility.</p>
+            <p>This isn't necessarily the same as searching the square with the highest probability of having the <span class="item"></span></p>
+            <p>For example, the filing cabinet might have a pretty high chance of containing the lost item,
+              but it's a lot harder to search the filing cabinet than the waste paper basket, therefore it's less likely overall that I would find the lost item in the filing cabinet.
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="col-md-6">
         <hr>
         <p>Fortunately, I took a Bayesian Inference course, which meant I could figure out the best order using the Bayesian Search Algorithm!</p>
-        <div class="card content">
-          <h4>Bayesian Search Algorithm</h4>
+        <div class="card content border-primary">
+          <h4 class="card-title">Bayesian Search Algorithm</h4>
           <ol>
             <li>I keep track of the best square to search (the one with the highest expected utility of finding the <span class="item"></span>)</li>
             <li>Assuming I don't find the <span class="item"></span>, I update my priors and expected utilities of searching every square.</li>
             <li>Then, I go back to step 1 (unless I want to stop searching)</li>
           </ol>
         </div>
-        <div class="m-1">
-          <h6>Outlined below is how the search would operate on a particular square, \( k \):</h6>
-          <p>Hypothesis: \( H_k: \) the <span class="item"></span> is in square k</p>
-          <p>Priors: \( P(H_k)\) is given in the table to the left</p>
-          <p>Data: A 5 min search fails to find the <span class="item"></span> in square k</p>
-          <p>Likelihoods:</p>
+        <div class="content m-1">
+          <h5>Outlined below is how the search would operate on a particular square, \( k \):</h5>
+          <p><strong>Hypothesis:</strong> \( H_k: \) the <span class="item"></span> is in square k</p>
+          <p><strong>Priors:</strong> \( P(H_k)\) is given in the table to the left</p>
+          <p><strong>Data:</strong> A 5-minute search fails to find the <span class="item"></span> in square k</p>
+          <p><strong>Likelihoods:</strong></p>
           <ul>
             <li>\( P(D | H_k) = 1 - U(search k | H_k) \) = 1 - (Ease of Detection for square k)</li>
             <li>\( P(D | H_i) = 1 \) for all \( i \neq k \)</li>
           </ul>
-          <p>Posteriors:</p>
+          <p><strong>Posteriors:</strong></p>
           <p>\( P(H_k | D) = \frac{P(D | H_k) P(H_k)}{P(D | H_K) P(H_K) + \sum P(H_i)} \) for all \( i \neq k \)</p>
           <p>\( P(H_i | D) = \frac{P(H_i)}{P(D | H_k) P(H_k) + \sum P(H_i)}\) all \( i \neq k \)</p>
           <p>Once I have the posteriors I can calculate the expected utility of the search. The utility of searching a square i (that hypothetically doesn't have the item) is 0. 
@@ -107,7 +117,7 @@ layout: bayesLayout
 
   <section class="container">
     <div class="content">
-     <p class="text-center">Therefore, to calculate the expected utilities I just multiply the ease of detection by the most updated priors.
+     <p class="text-center">Therefore, to calculate the expected utilities I just multiply the ease of detection by the posteriors.
       I use Bayes Formula as outlined above to update my priors.
      </p>
     </div>
@@ -133,6 +143,7 @@ layout: bayesLayout
 
   <section class="container">
       <div class="content text-center mt-5">
+        <h4>Resolution</h4>
         <p>I began my search using the above search sequence as a guide. After a few rounds of searching, I found my <span class="item"></span> :)</p>
       </div>
   </section>
