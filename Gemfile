@@ -19,8 +19,8 @@ group :jekyll_plugins do
 end
 
 # Liquid C 
-gem 'liquid', github: 'Shopify/liquid', branch: 'master'
-gem 'liquid-c', github: 'Shopify/liquid-c', branch: 'master'
+# gem 'liquid', github: 'Shopify/liquid', branch: 'master'
+# gem 'liquid-c', github: 'Shopify/liquid-c', branch: 'master'
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
