@@ -1,0 +1,207 @@
+.square-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 13em;
+  width: 13em;
+  margin: 0;
+  padding: 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* The flip card container - set the width and height to whatever you want. 
+We have added the border property to demonstrate that the flip itself 
+goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 1em;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: $primaryWhite;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  border-top: 3px solid $primaryOrange;
+  background-color: $primaryBlue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primaryWhite;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 0.5em;
+  padding: 0.5em;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
+
+.image-card {
+  display: flex;
+  flex-direction: row;
+  background-color: $primaryWhite;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 0.5em;
+  padding: 0.5em;
+  height: 200px;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    .image-frame {
+      background-color: $primaryOrange;
+    }
+    .education {
+      transform: scale(1.4) rotate(20deg) translate(30px, -10px);
+      // transform: rotate(-20deg) scale(1.2);
+    }
+    .info .timeframe:after {
+      background-color: $primaryOrange;
+      width: 120px;
+    }
+  }
+  .image-frame {
+    position: relative; // Ensures image stays within frame
+    flex-basis: 100%; // Width of image window
+    height: auto;
+    background-color: $primaryBlue;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .info {
+    position: relative;
+    text-align: left;
+    margin: auto;
+    padding: 1em;
+    z-index: 1;
+    .location {
+      text-decoration: dashed;
+    }
+    .timeframe {
+      color: grey;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        background-color: $primaryBlue;
+        width: 35px;
+        top: 5em;
+        left: 1em;
+        border-radius: 3px;
+        transition: 0.3s ease-out;
+      }
+    }
+    .details {
+      margin-top: 1rem;
+    }
+    .description {
+      position: relative;
+      margin-top: 0.2rem;
+    }
+  }
+}
+
+.grid-card {
+  padding: 1rem;
+  border-radius: 10px;
+  color: $textBlack;
+  background-color: $primaryWhite;
+  border: 3px solid $primaryWhite;
+  justify-self: center;
+  align-items: flex-start;
+  height: 20em;
+  width: 15em;
+  position: relative;
+  &:hover {
+    background-color: $primaryBlue;
+    color: $textWhite;
+    .title {
+      color: #ffffff;
+    }
+    .location {
+      background-color: $primaryOrange;
+      padding: 0.1em 0.4em;
+      border-radius: 10em;
+    }
+    .description {
+      opacity: 1;
+    }
+  }
+  .title {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    transition: 0.2s;
+  }
+  .location {
+    margin-top: 0.5em;
+    transition: 0.3s;
+    padding: 0.1em 0;
+  }
+  .timeframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75em;
+    padding: 1em;
+    line-height: 1em;
+    opacity: .8;
+  }
+  .description {
+    transition: 0.3s;
+    opacity: 0;
+    margin-top: 0.7em;
+  }
+}
+
+.transparent-card {
+  height: auto;
+  text-align: center;
+  border-radius: 12px;
+  // border: 1px solid $primaryGrey;
+  border-left: 3px solid $primaryBlue;
+  border-right: 3px solid $primaryOrange;
+  padding: 0.4em;
+}
