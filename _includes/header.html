@@ -4,7 +4,7 @@
     {% include svg/snowglobe.html %}
     <ul class="nav-list">
       {% for item in site.data.navbar %}
-        <li class="nav-item"><a class="nav-link" href="#{{ item.name | downcase }}">{{ item.name }}</a></li>
+        <li class="nav-item"><a class="btn nav-link" href="#{{ item.name | downcase }}">{{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>

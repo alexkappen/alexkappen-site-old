@@ -4,11 +4,18 @@ button {
   cursor: pointer;
 }
 
-.btn-round {
-  border-radius: 15px;
+.btn {
+  border-radius: 5px;
   padding: 0.5rem 1rem;
-  background-color: $secondary-theme-accent-dark;
-  border-bottom: 2px solid $secondary-theme-accent-light;
+}
+
+.btn-secondary {
+  background-color: $secondary-theme-colour;
+  border-bottom: 2px solid $secondary-theme-accent-dark;
   color: $white;
+  &:hover {
+    background-color: $secondary-theme-accent-dark;
+    border-bottom: 2px solid $secondary-theme-accent-light;
+  }
 }
 

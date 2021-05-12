@@ -11,7 +11,7 @@ for (let i = 0; i < bean.length; i++) {
   bean[i].style.strokeDasharray = bean[i].getTotalLength();
   // bean[i].style.fill = "transparent";
   bean[i].setAttribute("stroke", bean[i].getAttribute("fill"));
-  // bean[i].setAttribute("stroke-width", thiccInput.value);
+  bean[i].setAttribute("stroke-width", 1);
 }
 
 var beanDraw = anime({

@@ -1,6 +1,7 @@
 .header {
   background-color: $main-theme-bg;
-  height: 100vh;
+  // The Nav list is 8vh, so the rest of the header is 92vh (Mobile)
+  height: 92vh;
   display: flex;
   align-items: center;
   justify-content: center;

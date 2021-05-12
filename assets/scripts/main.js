@@ -1,10 +1,10 @@
 const skillDetails = document.querySelector('#skills-details');
 
 // Canvas setup
-canvas = document.querySelector('canvas');
-// canvas.width = canvas.parentElement.clientWidth;
-// canvas.height = canvas.parentElement.clientHeight;
-// canvas.style.backgroundColor = '#ffffff';
+canvas = document.querySelector('.canvas');
+canvas.width = canvas.parentElement.clientWidth;
+canvas.height = canvas.parentElement.clientHeight;
+canvas.style.backgroundColor = '#ffffff';
 
 let ctx = canvas.getContext('2d');
 

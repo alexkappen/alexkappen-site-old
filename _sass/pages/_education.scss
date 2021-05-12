@@ -1,0 +1,25 @@
+.undergrad-details {
+  .program {
+    font-weight: bold;
+    border-bottom: 1px solid $main-theme-colour;
+  }
+}
+
+.img-undergrad {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+.curriculum {
+  .subject {
+    color: $text-colour;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    &:hover {
+      border-bottom: 2px solid $main-theme-colour;
+    }
+  }
+}

@@ -8,7 +8,7 @@ layout: default
   <h2 class="section-title">Skills</h2>
   <!-- Skills Carosel -->
   <div class="skills-carousel">
-    <div class="carousel-1 coding">
+    <div class="carousel-1 card">
       <div class="grid-2">
         {% for entry in site.data.skills.coding %}
         <div class="coding-item">
@@ -19,14 +19,17 @@ layout: default
       </div>
     </div>
   </div>
+  <!-- Canvas Controls -->
+  <div class="canvas-controls">
+    <button id="bubbles" class="reveal-canvas btn btn-secondary">Bubbles</button>
+    <button id="reveal-svg-draw" class="btn btn-secondary">Drawing</button>
+    <button id="gravity" class="reveal-canvas btn btn-secondary">Gravity</button>
+  </div>
   <!-- Skills Showcase -->
   <div class="skills-showcase">
-    <div class="canvas-controls">
-      <button id="bubbles" class="reveal-canvas btn-round">Bubbles</button>
-      <button id="reveal-svg-draw" class="btn-round">Drawing</button>
-      <button id="gravity" class="reveal-canvas btn-round">Gravity</button>
+    <div class="coding-showcase">
+      <canvas class="canvas" width="200" height="100"></canvas>
     </div>
-    <canvas class="coding-showcase"></canvas>
     <div class="svg-draw">
       {% include svg/bean.html %}
     </div>
@@ -38,7 +41,7 @@ layout: default
   <div class="undergrad">
     {% assign undergrad = site.data.education.undergrad %}
     <div class="grid-2">
-      <div class="details">
+      <div class="undergrad-details card">
         <p class="program">{{ undergrad.program }}</p>
         <p class="location">{{ undergrad.location }}</p>
         <p class="dates">{{ undergrad.dates }}</p>
@@ -50,7 +53,7 @@ layout: default
       <h3>Curriculum</h3>
       <div class="grid">
         {% for subject in undergrad.curriculum %}
-          <div><a href="#">{{ subject.subject }}</a></div>    
+          <div><a href="#" class="subject">{{ subject.subject }}</a></div>   
         {% endfor %}
       </div>
     </div>
