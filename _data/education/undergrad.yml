@@ -3,10 +3,16 @@ location: 'McMaster University'
 dates: 'Sep 2018 - To-date'
 description: 3rd year, anticipated graduation May 2022
 curriculum:
-  - subject: Biology (cell bio, physiology, genetics)
+  - subject: Biology 
+    detail: (cell bio, physiology, genetics)
   - subject: General & Organic Chemistry 
-  - subject: Math (calculus, linear algebra)
-  - subject: Statistics (bayesian & frequentist)   
-  - subject: Physics (electricity/magnetism)
-  - subject: Psychology (developmental, social)
-  - subject: Computer Science (Machine Learning, Python & Java)"
+  - subject: Math 
+    detail: (calculus, linear algebra)
+  - subject: Statistics 
+    detail: (bayesian & frequentist)   
+  - subject: Physics 
+    detail: (electricity/magnetism)
+  - subject: Psychology 
+    detail: (developmental, social)
+  - subject: Computer Science 
+    detail: (Machine Learning, Python & Java)
