@@ -1,0 +1,30 @@
+#skills {
+  height: 150vh;
+}
+
+.skills-carousel {
+  background-color: $main-theme-bg;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-1 {
+  width: 80%;
+  margin: auto;
+}
+
+.skills-showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+canvas.coding-showcase {
+  border: 1px solid #000;
+}

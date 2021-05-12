@@ -1,10 +1,10 @@
-<header>
-  <div class="container">
-    <h1>{{site.data.personal.name}}</h1>
-    {% include headerImg.html %}
-    <ul class="navigation">
+<header class="header">
+  <div class="header-inner">
+    <h1 class="title">{{site.data.personal.name}}</h1>
+    {% include svg/snowglobe.html %}
+    <ul class="nav-list">
       {% for item in site.data.navbar %}
-        <li class="nav-item"><a class="nav-link {{ item.colour }}" href="{{ item.link }}"> {{ item.name }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#{{ item.name | downcase }}">{{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>

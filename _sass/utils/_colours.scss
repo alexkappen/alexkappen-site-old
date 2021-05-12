@@ -1,5 +1,41 @@
-// New Colour Palette (by Candela Rota from Adobe Color)
+// Shades
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
 
+// Greys
+$grey-8: hsl(0, 0%, 8%);
+$grey-16: hsl(0, 0%, 16%);
+$grey-32: hsl(0, 0%, 32%);
+
+// Blues
+$darker-blue: hsl(223, 89%, 33%);
+$primary-blue: hsl(210, 89%, 42%);
+$lighter-blue: hsl(198, 100%, 47%);
+
+// Oranges
+$darker-orange: hsl(4, 88%, 41%);
+$primary-orange: hsl(4, 96%, 61%);
+$lighter-orange: hsl(4, 83%, 67%);
+
+// --- Semantic Colours
+
+// Main Theme
+$main-theme-colour: $primary-blue;
+$main-theme-accent-light: $lighter-blue;
+$main-theme-accent-dark: $darker-blue;
+
+$main-theme-bg: $white;
+
+// Secondary Theme
+$secondary-theme-colour: $primary-orange;
+$secondary-theme-accent-light: $lighter-orange;
+$secondary-theme-accent-dark: $darker-orange;
+
+// Text
+$text-colour: $grey-8;
+
+
+// New Colour Palette (by Candela Rota from Adobe Color)
 $primaryWhite: #ffffff;
 $primaryGrey: #40403E;
 $primaryBlack: #080808;

@@ -1,0 +1,12 @@
+.noscript {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: yellow;
+}
+
+.section-title {
+  background-color: $main-theme-accent-dark;
+  border-bottom: 3px solid $main-theme-accent-light;
+  color: $white;
+}

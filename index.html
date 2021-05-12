@@ -5,87 +5,78 @@ layout: default
 ---
 
 <section id="skills">
-  <h2>Skills</h2>
-  <div id="skills-showcase">
-    <canvas></canvas>
-    <div id="skills-details" class="hor-grid">
-      {% for entry in site.data.skills %}
-      <div class="card transparent-card">
-        <h4 class="title">{{ entry.title }}</h4>
-        <!-- <p class="location">{{ entry.location }}</p>
-        <p class="timeframe">{{ entry.timeframe }}</p> -->
-        {% for d in entry.description %}
-          <p class="description">{{ d.detail }}</p>
+  <h2 class="section-title">Skills</h2>
+  <!-- Skills Carosel -->
+  <div class="skills-carousel">
+    <div class="carousel-1 coding">
+      <div class="grid-2">
+        {% for entry in site.data.skills.coding %}
+        <div class="coding-item">
+          <h3 class="item-title">{{ entry.name }}</h3>
+          <p class="item-description">{{ entry.details }}</p>
+        </div>
         {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
-</section>
-
-<section id="coding-examples">
-  <div class="coding-examples grid">
-    <div class="block-left">
-      <h3>JavaScript Coding Examples</h2>
-      <div class="btn-group">
-        <button id="bubbles" class="reveal-canvas btn-round">1</button>
-        <button id="reveal-svg-draw" class="btn-round">2</button>
-        <button id="gravity" class="reveal-canvas btn-round">3</button>
-      </div>
+  <!-- Skills Showcase -->
+  <div class="skills-showcase">
+    <div class="canvas-controls">
+      <button id="bubbles" class="reveal-canvas btn-round">Bubbles</button>
+      <button id="reveal-svg-draw" class="btn-round">Drawing</button>
+      <button id="gravity" class="reveal-canvas btn-round">Gravity</button>
     </div>
-    <div class="block-right">
-      <div class="svg-draw">
-        {% include bean.html %}
-      </div>
+    <canvas class="coding-showcase"></canvas>
+    <div class="svg-draw">
+      {% include svg/bean.html %}
     </div>
   </div>
 </section>
 
 <section id="education">
-  <div class="grid-2-inline">
-    <div class="container porthole">
-      <h2>Education</h2>
-    </div>
-    <div class="image-card alt">
-      <div class="image-frame">
-        <div class="education"></div>
+  <h2 class="section-title">Education</h2>
+  <div class="undergrad">
+    {% assign undergrad = site.data.education.undergrad %}
+    <div class="grid-2">
+      <div class="details">
+        <p class="program">{{ undergrad.program }}</p>
+        <p class="location">{{ undergrad.location }}</p>
+        <p class="dates">{{ undergrad.dates }}</p>
+        <p class="description">{{ undergrad.description }}</p>
       </div>
-      <div class="info">
-        {% for entry in site.data.education %}
-          <h4 class="title">{{ entry.title }}</h4>
-          <p class="location">{{ entry.location }}</p>
-          <p class="timeframe">{{ entry.timeframe }}</p>
-          <ul class="details">
-          {% for d in entry.description %}
-            <li class="description">{{ d.detail }}</li>
-          {% endfor %}
-          </ul>
+      <img class="img-undergrad" src="{{ site.baseurl}}assets/img/undraw_science_fqhl.svg" alt="">
+    </div>
+    <div class="curriculum">
+      <h3>Curriculum</h3>
+      <div class="grid">
+        {% for subject in undergrad.curriculum %}
+          <div><a href="#">{{ subject.subject }}</a></div>    
         {% endfor %}
       </div>
-  </div>
-  </div>
+    </div>
+  </div>  
 </section>
 
 <section id="work">
-  <h2>Work Experience</h2>
+  <h2 class="section-title">Work Experience</h2>
   <div class="grid">
-  {% for entry in site.data.work %}
-  <div class="card grid-card">
-    <h4 class="title">{{ entry.title }}</h4>
-    <p class="location">{{ entry.location }}</p>
-    <p class="timeframe">{{ entry.timeframe }}</p>
-    <ul class="details">
-    {% for d in entry.description %}
-      <li class="description">{{ d.detail }}</li>
-    {% endfor %}
-    </ul>
+    {% for job in site.data.work %}
+    <div class="card">
+      <h4 class="title">{{ job.title }}</h4>
+      <p class="location">{{ job.location }}</p>
+      <p class="dates">{{ job.timeframe }}</p>
+      <ul class="details">
+      {% for d in job.description %}
+        <li class="description">{{ d.detail }}</li>
+      {% endfor %}
+      </ul>
     </div>
-  {% endfor %}
+    {% endfor %}
   </div>
 </section>
 
 <section id="volunteer">
-  <h2>Volunteer Work</h2>
+  <h2 class="section-title">Volunteer Work</h2>
   <div class="grid">
     {% for entry in site.data.volunteer %}
     <div class="square-card flip-card ">

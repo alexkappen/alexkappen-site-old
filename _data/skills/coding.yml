@@ -1,0 +1,12 @@
+- name: Web Dev
+  details: 'Self-taught HTML, CSS, JavaScript. Canvas API, DOM manipulation'
+
+- name: Data Science & Python
+  details: 'NumPy, Pandas, TensorFlow, Scikit-Learn, web scraping'
+
+- name: Version Control 
+  details: 'Git and GitHub'
+
+- name: Other Tools & Tech
+  details: 'C#, Java, Ruby, Jekyll, Liquid templates'
+

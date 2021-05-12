@@ -50,22 +50,6 @@
   border: 2px solid $secondaryOrange;
 }
 
-.education {
-  position: absolute; // Allows for transforms
-  top: 0;
-  left:-100%;
-  right:-100%;
-  transform-origin: 50% 0;
-  transition: 0.4s ease-out;
-  min-height: 100%;
-  min-width: auto;
-  // Image
-  background-image: url('/assets/img/undraw_science_fqhl.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .alt {
   flex-direction: row-reverse;
 }
