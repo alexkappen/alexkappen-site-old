@@ -4,6 +4,12 @@
   dates: "Sep 2020 - To-date"
   description:
     - detail: Developed messaging system to update volunteers
+- title: "Student Volunteer" 
+  location: "McMaster Music in Medicine"
+  hours: "10+"
+  dates: "Sep 2020 - To-date"
+  description:
+    - detail: Developed messaging system to update volunteers
 - title: "Hospital Volunteer" 
   location: "Hamilton Health Sciences"
   hours: "50+"
