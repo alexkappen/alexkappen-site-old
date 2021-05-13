@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include for-size(tablet-landscape-up) {
+    margin-top: 8vh;
+  }
 }
 
 .header-inner {
@@ -41,6 +44,11 @@
   z-index: 2;
   background-color: $main-theme-colour;
   box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.3);
+  @include for-size(tablet-landscape-up) {
+    top: 0;
+    bottom: auto;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  }
 
   .nav-item {
     margin: 0 0.4rem;

@@ -68,14 +68,14 @@ const bubbleBtn = document.querySelector("#bubbles").addEventListener("click", (
 function pointRise(spread) {
   ballArray.forEach(ball => {
     // Dividing window.innerHeight by 2 yields a decent ball jump height
-    let height = -Math.abs(mouse.y - (window.innerHeight / 2));
-    let deltaX = Math.abs(ball.x - mouse.x) + spread;
+    const height = -Math.abs(mouse.y - (window.innerHeight / 2));
+    const deltaX = Math.abs(ball.x - mouse.x) + spread;
     // console.log('DeltaX: ' + deltaX);
     // ball.dy = Math.max(0, -deltaX + height);
     // ball.y += height;
-    let yVel = -Math.sqrt(2 * gravity * Math.abs(height) + 2 * spread)
+    const yVel = -Math.sqrt(2 * gravity * Math.abs(height) + 2 * spread)
     // console.log('Y Velocity: ' + yVel);
-    let rise = Math.sqrt(deltaX) + yVel;
+    const rise = Math.sqrt(deltaX) + yVel;
     // console.log('Rise: ' + rise);
     if (rise <= 0) {
       ball.dy += rise;

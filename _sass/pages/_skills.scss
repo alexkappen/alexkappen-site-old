@@ -27,6 +27,8 @@
   button {
     margin: 0 0.5rem;
   }
+  // Pushes controls below fixed & sticky headers
+  scroll-margin-top: 12vh;
 }
 
 .mobile-warning {

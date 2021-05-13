@@ -54,7 +54,7 @@ let ballArray = [];
 function ballInit() {
   ballArray = [];
 
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 120; i++) {
     let radius = randomIntFromRange(8, 20);
     let x = randomIntFromRange(radius, canvas.width - radius);
     let y = randomIntFromRange(radius, canvas.height - radius);

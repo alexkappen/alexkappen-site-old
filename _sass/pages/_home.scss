@@ -13,4 +13,12 @@
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
   }
+  @include for-size(tablet-landscape-up) {
+    position: sticky;
+    // 8vh becase that's the height of the navbar
+    top: 8vh;
+    z-index: 1;
+    // Pushes content below into view
+    margin-bottom: 5rem;
+  }
 }

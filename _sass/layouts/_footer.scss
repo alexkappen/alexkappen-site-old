@@ -8,6 +8,12 @@
   // Pushes content above sticky bottom nav on mobile
   margin-bottom: 8vh;
   padding: 1rem;
+  @include for-size(tablet-landscape-up) {
+    margin-bottom: 0;
+  }
+  .section-title {
+    margin-bottom: 0.5rem;
+  }
   .footer-link {
     color: $white;
     margin: 0.5rem;
