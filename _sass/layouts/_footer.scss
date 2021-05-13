@@ -7,9 +7,10 @@
   background-color: $main-theme-accent-dark;
   // Pushes content above sticky bottom nav on mobile
   margin-bottom: 8vh;
-  padding: 0.5rem;
-  a {
+  padding: 1rem;
+  .footer-link {
     color: $white;
+    margin: 0.5rem;
   }
 }
 

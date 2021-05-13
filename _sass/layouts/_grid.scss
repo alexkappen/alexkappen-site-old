@@ -1,10 +1,14 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.5rem;
   justify-items: center;
   align-items: center;
   text-align: center;
+  @include for-size(tablet-landscape-up) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+  }
 }
 
 .grid-2 {
@@ -20,10 +24,29 @@
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  @include for-size(tablet-portrait-up) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
 }

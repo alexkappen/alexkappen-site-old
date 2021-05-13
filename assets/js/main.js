@@ -67,7 +67,8 @@ const bubbleBtn = document.querySelector("#bubbles").addEventListener("click", (
 // Interactivity
 function pointRise(spread) {
   ballArray.forEach(ball => {
-    let height = -Math.abs(mouse.y - canvas.height);
+    // Dividing window.innerHeight by 2 yields a decent ball jump height
+    let height = -Math.abs(mouse.y - (window.innerHeight / 2));
     let deltaX = Math.abs(ball.x - mouse.x) + spread;
     // console.log('DeltaX: ' + deltaX);
     // ball.dy = Math.max(0, -deltaX + height);
@@ -86,7 +87,7 @@ function pointRise(spread) {
 canvasWrapper.addEventListener("click", () => {
   if (ballArray.length) {
     console.log("Pointer Down!");
-    const spread = 60;
+    const spread = 20;
     pointRise(spread);
     // serpent();
     // flyball();

@@ -1,6 +1,5 @@
 .volunteer-entries {
-  width: 80%;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .volunteer-entry {
@@ -10,8 +9,5 @@
   }
   &:nth-child(odd) {
     border-bottom: 3px solid $secondary-theme-colour;
-  }
-  &:last-child {
-    border-bottom: 3px solid transparent;
   }
 }

@@ -7,7 +7,7 @@ layout: default
 <section id="skills">
   <h2 class="section-title">Skills</h2>
   <!-- Skills Carosel -->
-  <div class="skills-carousel">
+  <div class="skills-carousel container">
     <div class="carousel-1 card">
       <div class="grid-2">
         {% for entry in site.data.skills.coding %}
@@ -40,7 +40,7 @@ layout: default
 
 <section id="education">
   <h2 class="section-title">Education</h2>
-  <div class="undergrad">
+  <div class="undergrad container">
     {% assign undergrad = site.data.education.undergrad %}
     <div class="grid-2">
       <div class="undergrad-details card">
@@ -51,7 +51,7 @@ layout: default
       </div>
       <img class="img-undergrad" src="{{ site.baseurl}}assets/img/undraw_science_fqhl.svg" alt="">
     </div>
-    <div class="curriculum card">
+    <div class="curriculum">
       <h3>Curriculum</h3>
       <div class="grid">
         {% for subject in undergrad.curriculum %}
@@ -64,7 +64,7 @@ layout: default
 
 <section id="work">
   <h2 class="section-title">Work Experience</h2>
-  <div class="grid">
+  <div class="grid-3 container">
     {% for job in site.data.work %}
     <div class="image-card">
       <div class="card-image">
@@ -88,7 +88,7 @@ layout: default
 
 <section id="volunteer">
   <h2 class="section-title">Volunteer Work</h2>
-  <div class="volunteer-entries grid">
+  <div class="volunteer-entries grid container">
     {% for entry in site.data.volunteer %}
     <div class="volunteer-entry">
       <h4 class="title">{{ entry.title }}</h4>
