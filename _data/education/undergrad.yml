@@ -5,14 +5,14 @@ description: 3rd year, anticipated graduation May 2022
 curriculum:
   - subject: Biology 
     detail: (cell bio, physiology, genetics)
-  - subject: General & Organic Chemistry 
+  - subject: Psychology 
+    detail: (developmental, social)
+  - subject: Chemistry 
   - subject: Math 
     detail: (calculus, linear algebra)
   - subject: Statistics 
     detail: (bayesian & frequentist)   
   - subject: Physics 
     detail: (electricity/magnetism)
-  - subject: Psychology 
-    detail: (developmental, social)
   - subject: Computer Science 
     detail: (Machine Learning, Python & Java)

@@ -1,7 +1,15 @@
+#education {
+  // Nav is 8vh, so 92vh education section + nav = 100vh
+  height: 92vh;
+}
+
 .undergrad-details {
   .program {
     font-weight: bold;
     border-bottom: 1px solid $main-theme-colour;
+  }
+  .dates {
+    color: $text-colour-light;
   }
 }
 
@@ -13,6 +21,7 @@
 }
 
 .curriculum {
+  margin: 0.5rem;
   .subject {
     color: $text-colour;
     text-decoration: none;
@@ -22,4 +31,5 @@
       border-bottom: 2px solid $main-theme-colour;
     }
   }
+  
 }

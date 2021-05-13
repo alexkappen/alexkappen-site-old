@@ -49,11 +49,11 @@ layout: default
       </div>
       <img class="img-undergrad" src="{{ site.baseurl}}assets/img/undraw_science_fqhl.svg" alt="">
     </div>
-    <div class="curriculum">
+    <div class="curriculum card">
       <h3>Curriculum</h3>
       <div class="grid">
         {% for subject in undergrad.curriculum %}
-          <div><a href="#" class="subject">{{ subject.subject }}</a></div>   
+          <div><a href="#education" class="subject">{{ subject.subject }}</a></div>   
         {% endfor %}
       </div>
     </div>
@@ -64,38 +64,19 @@ layout: default
   <h2 class="section-title">Work Experience</h2>
   <div class="grid">
     {% for job in site.data.work %}
-    <div class="card">
-      <h4 class="title">{{ job.title }}</h4>
-      <p class="location">{{ job.location }}</p>
-      <p class="dates">{{ job.timeframe }}</p>
-      <ul class="details">
-      {% for d in job.description %}
-        <li class="description">{{ d.detail }}</li>
-      {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section id="volunteer">
-  <h2 class="section-title">Volunteer Work</h2>
-  <div class="grid">
-    {% for entry in site.data.volunteer %}
-    <div class="square-card flip-card ">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="{{ entry.img }}">
-          <h4 class="title">{{ entry.title }}</h4>
-          <p class="location">{{ entry.location }}</p>
-          <p class="timeframe">{{ entry.timeframe }}</p>
-        </div>
-        <div class="flip-card-back">
-          <ul class="details">
-            {% for d in entry.description %}
-            <li class="description">{{ d.detail }}</li>
-            {% endfor %}
-          </ul>
+    <div class="image-card">
+      <div class="card-image">
+        <img src="{{ site.baseurl }}assets/img/work/{{ job.image.filename }}" alt="{{ job.image.alt }}">
+        <p class="img-reference">{{ job.image.reference }}</p>
+      </div>
+      <div class="card-body">
+        <h3 class="title">{{ job.title }}</h3>
+        <p class="location">{{ job.location }}</p>
+        <p class="dates">{{ job.dates }}</p>
+        <div class="details">
+        {% for d in job.description %}
+          <p class="description">{{ d.detail }}</p>
+        {% endfor %}
         </div>
       </div>
     </div>
@@ -103,13 +84,15 @@ layout: default
   </div>
 </section>
 
-<section id="contact">
-  <div class="grid-box">
-    <div class="card">
-      <h2>Contact</h2>
-      <img src="/assets/img/professional-email.jpg">
-      <a href="https://github.com/alexkappen" target="_blank">GitHub</a>
-      <a href="https://github.com/imakappa" target="_blank">GitHub (Hobby Account)</a>
+<section id="volunteer">
+  <h2 class="section-title">Volunteer Work</h2>
+  <div class="volunteer-entries grid">
+    {% for entry in site.data.volunteer %}
+    <div class="volunteer-entry">
+      <h4 class="title">{{ entry.title }}</h4>
+      <p class="location">{{ entry.location }}</p>
+      <p class="dates">{{ entry.dates }}</p>
     </div>
+    {% endfor %}
   </div>
 </section>

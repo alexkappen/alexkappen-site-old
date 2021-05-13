@@ -3,7 +3,7 @@
     <h1 class="title">{{site.data.personal.name}}</h1>
     {% include svg/snowglobe.html %}
     <ul class="nav-list">
-      {% for item in site.data.navbar %}
+      {% for item in site.data.navigation %}
         <li class="nav-item"><a class="btn nav-link" href="#{{ item.name | downcase }}">{{ item.name }}</a></li>
       {% endfor %}
     </ul>

@@ -1,60 +1,46 @@
-- hospital:
-  title: "Hospital Volunteer" 
-  date: 2020-03-14
+- title: "Technology Coordinator" 
+  location: "Virtual Pals"
+  hours: "30+"
+  dates: "Sep 2020 - To-date"
+  description:
+    - detail: Developed messaging system to update volunteers
+- title: "Hospital Volunteer" 
   location: "Hamilton Health Sciences"
   hours: "50+"
-  timeframe: "Oct 2019 - Mar 2020"
+  dates: "Oct 2019 - Mar 2020"
   description:
     - detail: Volunteered in Stroke Rehabilitation ward, assisted Physio- & Occupational Therapists with patient recovery and well-being
     - detail: Assisted in-patients on wheelchairs get to their therapy appointments on time
-- aquatics:
-  title: "Aquatics Volunteer" 
-  date: 2016-09-01
+- title: "Aquatics Volunteer" 
   location: "City of Brampton"
   hours: "100+"
-  timeframe: "Jan 2016 - Sep 2016"
+  dates: "Jan 2016 - Sep 2016"
   description: 
     - detail: "Assisted aquatics instructors with youth swimming lessons at Century Gardens Recreation Center Brampton"
-- karate:
-  title: "Karate Assistant Instructor" 
-  date: 2016-11-01
+- title: "Karate Assistant Instructor" 
   location: "Shiva Fighter's Karate Do"
   hours: "50+"
-  timeframe: "Jun 2014 - Nov 2016"
+  dates: "Jun 2014 - Nov 2016"
   description: 
     - detail: Assisted in teaching karate to younger students 
     - detail: Volunteered at local dojo tournaments and Karate Ontario tournaments
-- summercamp:
-  title: "Summer Camp Volunteer" 
-  date: 2016-09-01
+- title: "Summer Camp Volunteer" 
   location: "City of Brampton"
   hours: "110+"
-  timeframe: "Jul 2015 - Sep 2015"
+  dates: "Jul 2015 - Sep 2015"
   description: 
     - detail: Volunteered at arts summer camp program for youth (ages 5-12)
     - detail: Conducted drawing sessions and piano lessons
-- homelessshelter:
-  title: "Homeless Shelter Volunteer"
-  date: 2017-03-01
+- title: "Homeless Shelter Volunteer"
   location: "ReGeneration Homeless Shelter Brampton"
   hours: "10+"
-  timeframe: "Mar 2017 - Mar 2017"
+  dates: "Mar 2017, May 2018"
   description: 
     - detail: "Assisted staff at the homeless shelter in organizing and packaging toiletries and clothing for homeless in the local community"
-- homelessshelter:
-  title: "Homeless Shelter Volunteer"
-  date: 2018-05-01
-  location: "ReGeneration Homeless Shelter Brampton"
-  hours: "10+"
-  timeframe: "May 2018 - May 2018"
-  description: 
-    - detail: "Prepared meals for homeless and those suffering from mental illness, as part of a school retreat"
-- highschool:
-  title: "High School Leadership Programs" 
-  date: 2018-05-01
+- title: "High School Leadership Programs" 
   location: "Cardinal Ambrozic C.S.S"
   hours: "50+"
-  timeframe: "Sep 2016 - May 2018"
+  dates: "Sep 2016 - May 2018"
   description:
     - detail: "Fast & Servious Charity Event: Students give toiletries, money, and food to homeless people and shelters in Toronto (Jan 2018 - Mar 2018)"
     - detail: Highschool Leadership Program to welcome and help Grade 9 students transition to highschool (Sept 2016 - Jun 2017)

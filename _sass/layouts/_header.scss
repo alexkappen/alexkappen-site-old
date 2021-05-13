@@ -52,8 +52,13 @@
     padding: 0.2rem;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $main-theme-accent-dark;
+      border-bottom: 2px solid $main-theme-accent-light;
+    }
+    &:active {
+      background-color: $main-theme-accent-darker;
       border-bottom: 2px solid $main-theme-accent-light;
     }
   }

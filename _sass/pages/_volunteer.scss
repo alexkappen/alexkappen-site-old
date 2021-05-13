@@ -1,0 +1,17 @@
+.volunteer-entries {
+  width: 80%;
+  margin: auto;
+}
+
+.volunteer-entry {
+  padding: 0.5rem;
+  &:nth-child(even) {
+    border-bottom: 3px solid $main-theme-colour;
+  }
+  &:nth-child(odd) {
+    border-bottom: 3px solid $secondary-theme-colour;
+  }
+  &:last-child {
+    border-bottom: 3px solid transparent;
+  }
+}

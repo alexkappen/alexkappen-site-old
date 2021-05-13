@@ -1,25 +1,15 @@
-footer {
-  background-color: $primaryBlue;
-  color: $textWhite;
-  width: 100%;
-  padding: 4em 2em;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  background-color: $main-theme-accent-dark;
+  // Pushes content above sticky bottom nav on mobile
+  margin-bottom: 8vh;
+  padding: 0.5rem;
   a {
-    color: $textWhite;
-    &:hover {
-      color: $textWhite;
-    }
+    color: $white;
   }
 }
 
-.resume-pdf {
-  padding: 8px 16px;
-  // margin-bottom: 1em;
-  border-radius: 4px;
-  background-color: $secondaryBlue;
-  color: $textWhite;
-  &:hover {
-    background-color: $primaryWhite;
-    color: $primaryBlue;
-  }
-}

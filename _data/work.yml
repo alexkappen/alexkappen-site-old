@@ -1,20 +1,32 @@
 - title: 'Karate Instructor' 
   location: "Shiva Fighter's Karate Do"
   dates: 'Nov 2016 - Aug 2020'
+  image:
+    alt: karate
+    filename: soon-santos--XGqShGxO8E-unsplash.webp
+    reference: Photo by <a href="https://unsplash.com/@soonsam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">SOON SANTOS</a> on <a href="https://unsplash.com/s/photos/karate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   description:
   - detail: Taught karate to youth (ages 6-14 yrs)
   - detail: Promoted fitness and discipline by leading exercises and competitive games
 
 - title: 'Swimming Instructor' 
   location: 'City of Brampton'
-  timeframe: 'Jul - Oct 2017, Jul - Aug 2019'
+  dates: 'Jul - Oct 2017, Jul - Aug 2019'
+  image:
+    alt: swimming
+    filename: serena-repice-lentini-TVOAbbLL050-unsplash.webp
+    reference: Photo by <a href="https://unsplash.com/@serenarepice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Serena Repice Lentini</a> on <a href="https://unsplash.com/s/photos/swimming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   description:
   - detail: Taught swimming and water safety to youth (ages 4-12 yrs)
   - detail: Evaluated student’s aquatics skills, wrote report cards, consulted with parents
 
 - title: 'Piano Instructor' 
   location: 'City of Brampton'
-  timeframe: 'Mar 2017 - June 2017'
+  dates: 'Mar 2017 - June 2017'
+  image:
+    alt: piano
+    filename: lorenzo-spoleti-MlhJNEUQpBs-unsplash.webp
+    reference: Photo by <a href="https://unsplash.com/@lorenzospoleti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lorenzo Spoleti</a> on <a href="https://unsplash.com/s/photos/piano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   description:
   - detail: Taught piano basics and introductory music theory to youth (6-12 yrs)
   - detail: Prepared 3-month curriculum for weekly introductory music theory class

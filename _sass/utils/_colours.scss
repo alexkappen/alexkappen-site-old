@@ -6,9 +6,12 @@ $black: hsl(0, 0%, 0%);
 $grey-8: hsl(0, 0%, 8%);
 $grey-16: hsl(0, 0%, 16%);
 $grey-32: hsl(0, 0%, 32%);
+$grey-64: hsl(0, 0%, 64%);
+$grey-80: hsl(0, 0%, 80%);
 $grey-96: hsl(0, 0%, 96%);
 
 // Blues
+$even-darker-blue: hsl(223, 92%, 20%);
 $darker-blue: hsl(223, 89%, 33%);
 $primary-blue: hsl(210, 89%, 42%);
 $lighter-blue: hsl(198, 100%, 47%);
@@ -24,6 +27,7 @@ $lighter-orange: hsl(4, 83%, 67%);
 $main-theme-colour: $primary-blue;
 $main-theme-accent-light: $lighter-blue;
 $main-theme-accent-dark: $darker-blue;
+$main-theme-accent-darker: $even-darker-blue;
 
 $main-theme-bg: $white;
 
@@ -34,6 +38,7 @@ $secondary-theme-accent-dark: $darker-orange;
 
 // Text
 $text-colour: $grey-8;
+$text-colour-light: $grey-32;
 
 
 // New Colour Palette (by Candela Rota from Adobe Color)
