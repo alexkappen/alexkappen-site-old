@@ -1,5 +1,4 @@
 // Mr Bean Demo
-const codingShowcase = document.querySelector(".coding-showcase");
 const demoControls = document.querySelector(".canvas-controls");
 
 const bean = document.querySelectorAll("#bean path");

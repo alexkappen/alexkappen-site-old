@@ -48,24 +48,6 @@ class Ball {
   }
 }
 
-// Interactivity
-function pointRise(spread) {
-  ballArray.forEach(ball => {
-    height = -Math.abs(mouse.y - window.innerHeight);
-    deltaX = Math.abs(ball.x - mouse.x) + spread;
-    // console.log('DeltaX: ' + deltaX);
-    // ball.dy = Math.max(0, -deltaX + height);
-    // ball.y += height;
-    yVel = -Math.sqrt(2 * gravity * Math.abs(height) + 2 * spread)
-    // console.log('Y Velocity: ' + yVel);
-    rise = Math.sqrt(deltaX) + yVel;
-    // console.log('Rise: ' + rise);
-    if (rise <= 0) {
-      ball.dy += rise;
-    }
-  });
-}
-
 // Implementation
 let ballArray = [];
 
@@ -82,28 +64,3 @@ function ballInit() {
     ballArray.push(new Ball(x, y, dx, dy, radius, colour));
   }
 }
-
-// Animation Loop
-function ballAnimate() {
-  globalID = requestAnimationFrame(ballAnimate);
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  ballArray.forEach(ball => {
-    ball.update();
-  });
-}
-
-skillDetails.addEventListener('click', () => {
-  // flyball();
-  spread = 60;
-  pointRise(spread);
-  // serpent();
-});
-
-// Controls
-const gravityCanvas = document.querySelector('#gravity').addEventListener('click', () => {
-  stop(globalID);
-  start(ballInit, ballAnimate);
-  currentInit = ballInit;
-  currentAnim = ballAnimate;
-});

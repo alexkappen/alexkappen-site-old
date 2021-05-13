@@ -52,6 +52,7 @@ class Circle {
   }
 }
 
+// --- Bubble Animation
 let bubbleArray = [];
 
 function bubbleInit() {
@@ -68,20 +69,12 @@ function bubbleInit() {
 }
 
 function bubbleAnimate() {
+  // Animate canvas
   globalID = requestAnimationFrame(bubbleAnimate);
+  // Clear canvas every frame
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  for (let i = 0; i < bubbleArray.length; i++) {
-    bubbleArray[i].update();
-  }
+  // Update Every Bubble
+  bubbleArray.forEach(bubble => {
+    bubble.update();
+  });
 }
-
-// Controls
-const bubbleCanvas = document.querySelector('#bubbles').addEventListener('click', () => {
-  stop(globalID);
-  start(bubbleInit, bubbleAnimate);
-  currentInit = bubbleInit;
-  currentAnim = bubbleAnimate;
-});
-
-
